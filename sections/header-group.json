@@ -39,8 +39,8 @@
             "countdown_show_labels": true,
             "countdown_make_labels_font_bolder": true,
             "countdown_labels_color": "#585858",
-            "desktop_text": "<p>Sale Ends In</p>",
-            "mobile_text": "<p>Sale Ends In</p>",
+            "desktop_text": "<p><strong>Sale Ends In</strong></p>",
+            "mobile_text": "<p><strong>Sale Ends In</strong></p>",
             "icon": "",
             "color": "#000000",
             "color_scheme": "background-2"
