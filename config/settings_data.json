@@ -110,6 +110,7 @@
     "swatch_config": "",
     "show_selected_variant_value": false,
     "product_card_pills": "both",
+    "size_variant_label": "Size",
     "show_media_attached_to_variant": false,
     "product_media_ratio": "auto",
     "fit_product_media": false,
