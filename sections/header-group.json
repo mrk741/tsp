@@ -13,6 +13,22 @@
   "sections": {
     "announcement_bar_zGzxYa": {
       "type": "announcement-bar",
+      "blocks": {
+        "text_dJgrDE": {
+          "type": "text",
+          "settings": {
+            "desktop_text": "<p>Announce something Announce something</p>",
+            "mobile_text": "<p>Announce</p>",
+            "icon": "",
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "color_scheme": "background-2"
+          }
+        }
+      },
+      "block_order": [
+        "text_dJgrDE"
+      ],
       "name": "Announcement bar",
       "settings": {
         "announcement_bar": "show",
