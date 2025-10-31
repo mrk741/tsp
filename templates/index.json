@@ -216,7 +216,7 @@
         "show_arrows": true,
         "desktop_content_under_media": false,
         "mobile_content_under_media": false,
-        "full_width": false,
+        "full_width": true,
         "grid_style": "page",
         "disable_max_width": false,
         "show_bottom_line": false,
