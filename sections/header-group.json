@@ -151,7 +151,7 @@
         "elements_uppercase": false,
         "elements_bolder_font": false,
         "mobile_header_layout": "logo_center_burger_left",
-        "enable_search_field": false,
+        "enable_search_field": true,
         "grid_style": "page",
         "disable_max_width": false,
         "color_scheme": "background-1",
