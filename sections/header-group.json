@@ -24,10 +24,22 @@
             "mobile_color": "#000000",
             "color_scheme": "background-2"
           }
+        },
+        "text_WdqGJt": {
+          "type": "text",
+          "settings": {
+            "desktop_text": "<p>Testing</p>",
+            "mobile_text": "<p>Announce</p>",
+            "icon": "",
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "color_scheme": "background-2"
+          }
         }
       },
       "block_order": [
-        "text_dJgrDE"
+        "text_dJgrDE",
+        "text_WdqGJt"
       ],
       "name": "Announcement bar",
       "settings": {
