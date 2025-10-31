@@ -156,7 +156,7 @@
         "disable_max_width": false,
         "color_scheme": "background-1",
         "bottom_color_scheme": "background-1",
-        "hide_header_bg": true,
+        "hide_header_bg": false,
         "show_header_bg_on_hover": true,
         "show_bottom_line": false,
         "desktop_top_and_bottom_spacing": 14,
