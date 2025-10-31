@@ -83,7 +83,7 @@
             "countdown_make_labels_font_bolder": false,
             "countdown_make_labels_uppercase": false,
             "countdown_labels_color": "#565656",
-            "button_label_1": "Discover",
+            "button_label_1": "",
             "button_icon_1": "",
             "swap_button_icon_1": false,
             "button_style_1": "solid",
