@@ -11,6 +11,7 @@
   "sections": {
     "collapsible_tabs_ekEtGz": {
       "type": "collapsible-tabs",
+      "disabled": true,
       "name": "t:sections.collapsible_tabs.name",
       "settings": {
         "subheading": "",
