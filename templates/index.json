@@ -47,6 +47,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner.png",
+            "mobile_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner.png",
             "link": "",
             "target_blank": false,
             "icon": "",
