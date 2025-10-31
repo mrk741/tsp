@@ -74,7 +74,7 @@
         "show_burger": true,
         "burger_style": "icon",
         "burger_position": "left",
-        "enable_store_selector": false,
+        "enable_store_selector": true,
         "store_selector_icon": "glyphs/signs/shop",
         "show_search": true,
         "search_style": "field",
