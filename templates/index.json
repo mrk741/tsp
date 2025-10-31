@@ -63,7 +63,7 @@
             "text": "",
             "text_style": "body-font",
             "richtext_heading_style": "section-heading",
-            "countdown_enable": true,
+            "countdown_enable": false,
             "countdown_end_date": "2025-12-23",
             "countdown_end_time": "2025-12-26",
             "countdown_expiration_action": "hide_timer",
