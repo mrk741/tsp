@@ -53,7 +53,7 @@
         ".header--on_scroll-stick {box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); transition: box-shadow 0.3s ease;}"
       ],
       "settings": {
-        "header_layout": "logo_center_menu_split",
+        "header_layout": "logo_left_wide_search",
         "sticky_header": "on_scroll",
         "menu": "main-menu",
         "parent_menu": true,
