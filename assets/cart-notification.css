@@ -1,0 +1,26 @@
+.cart-item__info {
+    justify-content: space-between;
+    flex: 1 1 100%;
+    column-gap: 8px;
+}
+
+.cart-notification-product,
+.cart-notification__links {
+    margin-top: var(--block-padding);
+}
+
+.cart-notification__links {
+    display: flex;
+    gap: 8px;
+}
+.cart-notification__links > * {
+    flex: 1 1 calc(50% - 4px);
+}
+
+#cart-notification-form .button {
+    width: 100%;
+}
+
+.cart-notification-product .price.price--end {
+    min-width: max-content;
+}

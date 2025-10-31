@@ -1,0 +1,188 @@
+.icons-with-text--inline {
+    vertical-align: top;
+    display: inline-flex;
+    width: calc((100% - (var(--block-padding-xs) + 4px)) /2);
+}
+
+.icons-with-text--inline + .icons-with-text--inline,
+.icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline {
+    margin-inline-start: var(--block-padding-xs);
+}
+
+.product__info-container:has(.icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline) .icons-with-text--inline {
+    width: calc((100% - (var(--block-padding-xs) + 4px) * 2) /3);
+}
+
+.product__info-container:has(.icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline) .icons-with-text--inline {
+    width: calc((100% - (var(--block-padding-xs) + 4px)) /2);
+}
+
+.product__info-container:has(.icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline) .icons-with-text--inline:nth-child(2n) {
+    margin-inline-end: 0px;
+}
+
+.product__info-container:has(.icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline) .icons-with-text--inline + .icons-with-text--inline + .icons-with-text--inline {
+    margin-inline-start: var(--block-padding-xs);
+}
+
+.icons-with-text__heading:has(+.icons-with-text__container:not(:empty)) {
+    margin-bottom: var(--block-padding-s);
+}
+
+.icons-with-text.icons-with-text--block .icons_with_text__item {
+    margin-bottom: 0;
+}
+
+.icons_with_text__media {
+    overflow: clip;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--media-size);
+    aspect-ratio: 1 / 1;
+    flex: 0 0 var(--media-size);
+}
+
+.icons-with-text__container {
+    gap: 16px;
+}
+
+.icons_with_text__icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+.icons_with_text__icon--with-color svg path:first-child,
+.icons_with_text__icon--with-color svg circle:first-child {
+    fill: var(--color)!important;
+}
+
+.icons_with_text__icon {
+    display: flex;
+}
+
+.icons_with_text__image,
+.icons_with_text__icon {
+    width: 100%;
+    height: 100%;
+    overflow: clip;
+}
+
+.icons_with_text__image .lazy-image {
+    height: 100%;
+}
+
+.icons_with_text__image img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+    border-radius: var(--image-radius);
+    -webkit-border-radius: var(--image-radius);
+}
+
+.icons_with_text__media--fill .icons_with_text__image {
+    width: 100%;
+    border-radius: var(--context-icon-radius);
+    -webkit-border-radius: var(--context-icon-radius); 
+}
+
+.icons_with_text__media--fill .icons_with_text__image img {
+    object-fit: cover;   
+}
+
+.icons-with-text--vertical .icons_with_text__wrapper.cursor-pointer,
+.icons-with-text--block a.icons_with_text__link,
+.icons-with-text--horizontal .icons_with_text__item .icons_with_text__wrapper.cursor-pointer {
+    cursor: pointer;
+    transition: opacity var(--animation-duration) var(--transition-timing-function);
+}
+
+.icons_with_text__link .icons_with_text__title,
+modal-opener .icons_with_text__title {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-thickness-heading);
+    text-underline-offset: var(--underline-offset-heading);
+}
+
+.icons_with_text__link .icons_with_text__title.body-font,
+modal-opener .icons_with_text__title.body-font,
+.icons_with_text__link .icons_with_text__title.subheading-font:not(.subheading-heading-font),
+modal-opener .icons_with_text__title.subheading-font:not(.subheading-heading-font) {
+    text-decoration-thickness: var(--underline-thickness-body);
+    text-underline-offset: var(--underline-offset-body);
+}
+
+modal-opener .icons_with_text__title {
+    text-decoration-style: dashed;
+}
+
+.icons-with-text--block .icons_with_text__wrapper,
+.icons-with-text--block .icons_with_text__link,
+.icons_with_text__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--block-padding-xs);
+}
+
+.icons-with-text--horizontal .icons_with_text__wrapper,
+.icons-with-text--horizontal .icons_with_text__link {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--block-padding-s);
+}
+
+.icons-with-text--horizontal .show-lines .icons_with_text__item {
+    border-block-start: var(--line-thickness) solid rgb(var(--lines-color));
+    padding: var(--block-padding-s) 0;
+}
+
+.icons-with-text--horizontal .icons-with-text__container:not(.show-lines) .icons_with_text__item:not(:last-child),
+.icons-with-text--horizontal:has( + .icons-with-text--horizontal) .icons-with-text__container:not(.show-lines) .icons_with_text__item:last-child {
+    padding-bottom: var(--block-padding-s);
+}
+
+.icons-with-text--horizontal:has( .show-lines) + .icons-with-text--horizontal[style*="--spacing: 0;"]:has( .show-lines):not(:has( .icons-with-text__heading)) .icons_with_text__item:first-child {
+    border-block-start: none;
+}
+
+.icons-with-text--horizontal .show-lines .icons_with_text__item:last-child {
+    border-block-end: var(--line-thickness) solid rgb(var(--lines-color));
+}
+
+.icons-with-text--horizontal .icons_with_text__info,
+.icons-with-text--horizontal .icons-with-text__container {
+    gap: 0;
+}
+
+.icons_with_text__description p:has(+ .icon--small) {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.icons_with_text__description .icon--small {
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+@media (hover: hover) {
+    .icons-with-text--vertical .icons_with_text__wrapper.cursor-pointer:hover,
+    .icons-with-text--block a.icons_with_text__link:hover,
+    .icons-with-text--horizontal .icons_with_text__item:hover .icons_with_text__wrapper.cursor-pointer {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icons-with-text--horizontal + .icons-with-text--horizontal:not([style*="--mobile-spacing: 0;"]):not(:has( .icons-with-text__heading)):has( .show-lines) .icons_with_text__item:first-child {
+        border-block-start: var(--line-thickness) solid rgb(var(--lines-color));
+    }
+    .icons-with-text--horizontal:has( .show-lines) + .icons-with-text--horizontal[style*="--mobile-spacing: 0;"]:not(:has( .icons-with-text__heading)):has( .show-lines) .icons_with_text__item:first-child {
+        border-block-start: none;
+    }
+    .icons_with_text__icon--with-color svg path:first-child,
+    .icons_with_text__icon--with-color svg circle:first-child {
+        fill: var(--mobile-color)!important;
+    }
+}

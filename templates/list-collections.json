@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main-list-collections": {
+      "type": "main-list-collections",
+      "settings": {
+        "heading": "Collections",
+        "heading_style": "section-heading",
+        "center_text": true,
+        "desktop_columns": "3",
+        "mobile_columns": "2",
+        "sort_collections_by": "date",
+        "show_collection_card_border": false,
+        "overlay_opacity": 19,
+        "full_width": true,
+        "grid_style": "secondary",
+        "disable_max_width": false,
+        "disable_grid_gaps": false,
+        "show_bottom_line": false,
+        "color_scheme": "background-1",
+        "collection_card_color_scheme": "background-2",
+        "top_spacing": 0.2,
+        "bottom_spacing": 1
+      }
+    }
+  },
+  "order": [
+    "main-list-collections"
+  ]
+}

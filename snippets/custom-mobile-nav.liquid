@@ -1,0 +1,96 @@
+<div id="CustomMobileNav" class="custom-mobile-nav">
+  <div class="custom-mobile-nav__scroller">
+    <div class="custom-mobile-nav__header">
+      <button class="custom-mobile-nav__header-btn custom-mobile-nav__back-btn" style="display: none;">{% render 'icon-chevron-left' %}</button>
+      <h3 class="custom-mobile-nav__title"></h3>
+      <button class="custom-mobile-nav__header-btn custom-mobile-nav__close-btn">{% render 'icon-x' %}</button>
+    </div>
+
+    <div class="custom-mobile-nav__level" data-level="1">
+      <div class="custom-mobile-nav__tabs">
+        {%- comment -%} Dynamically generate tabs from the 'top-level-category' menu {%- endcomment -%}
+        {% for link in linklists.top-level-category.links %}
+          <button class="custom-mobile-nav__tab-btn" data-menu-handle="{{ link.handle }}">{{ link.title }}</button>
+        {% endfor %}
+      </div>
+
+      <div class="custom-mobile-nav__panels">
+        {%- comment -%} Dynamically generate panels for each tab {%- endcomment -%}
+        {% for link in linklists.top-level-category.links %}
+          {% assign panel_menu_handle = link.handle %}
+          <div class="custom-mobile-nav__panel" data-menu-handle="{{ panel_menu_handle }}">
+            <div class="custom-mobile-nav__grid">
+              {% for sub_link in linklists[panel_menu_handle].links %}
+                <a href="{{ sub_link.url }}" class="custom-mobile-nav__grid-item" data-title="{{ sub_link.title | escape }}" {% if sub_link.links != blank %}data-has-submenu="true"{% endif %}>
+                  <span class="custom-mobile-nav__grid-item-title">{{ sub_link.title }}</span>
+                </a>
+                {% if sub_link.links != blank %}
+                  <div class="custom-mobile-nav__submenu-data" style="display: none;">
+                    <div class="submenu-grid-wrapper">
+                      <div class="custom-mobile-nav__grid">
+                        {% for child_link in sub_link.links %}
+                          <a href="{{ child_link.url }}" class="custom-mobile-nav__grid-item" data-title="{{ child_link.title | escape }}" {% if child_link.links != blank %}data-has-submenu="true"{% endif %}>
+                            <span class="custom-mobile-nav__grid-item-title">{{ child_link.title }}</span>
+                          </a>
+                          {% if child_link.links != blank %}
+                            <div class="custom-mobile-nav__submenu-data" style="display: none;">
+                              <div class="submenu-grid-wrapper">
+                                <div class="custom-mobile-nav__grid">
+                                  {% for grandchild_link in child_link.links %}
+                                    <a href="{{ grandchild_link.url }}" class="custom-mobile-nav__grid-item" data-title="{{ grandchild_link.title | escape }}">
+                                      <span class="custom-mobile-nav__grid-item-title">{{ grandchild_link.title }}</span>
+                                    </a>
+                                  {% endfor %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            
+            {% comment %} <hr class="nav-divider">
+            
+            <div class="custom-mobile-nav__brands"></div>
+            <hr class="nav-divider">
+            <div class="custom-mobile-nav__new-collections"></div>
+            <hr class="nav-divider">
+            <div class="custom-mobile-nav__exclusive-links"></div> {% endcomment %}
+            <div class="custom-mobile-nav__footer">
+              <div class="custom-mobile-nav__social-links">
+                {%- for link in linklists['social-media'].links -%}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{%- assign social_icon = link.title | handle | prepend: 'icon-' -%}{% render social_icon %}</a>
+                {%- endfor -%}
+              </div>
+              <div class="custom-mobile-nav__footer-section">
+                <h5 class="custom-mobile-nav__footer-title">CUSTOMER CARE</h5>
+                <ul class="custom-mobile-nav__footer-list">
+                  {%- for link in linklists['customer-care'].links -%}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+              <div class="custom-mobile-nav__footer-section">
+    
+             
+              </div>
+              <div class="custom-mobile-nav__footer-bottom-nav">
+                {%- for link in linklists['footer-bottom-links'].links -%}
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="custom-mobile-nav__level" data-level="2" style="display: none;">
+      <div class="custom-mobile-nav__submenu-content"></div>
+    </div>
+  </div>
+</div>

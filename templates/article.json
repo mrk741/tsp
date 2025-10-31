@@ -1,0 +1,94 @@
+ {
+  "sections": {
+    "breadcrumbs_zxymR7": {
+      "type": "breadcrumbs",
+      "settings": {
+        "breadcrumbs_center_content": true,
+        "grid_style": "page",
+        "disable_max_width": false,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "top_spacing": 0.3,
+        "bottom_spacing": 0.3
+      }
+    },
+    "main-article": {
+      "type": "main-article",
+      "blocks": {
+        "5ce261ff-a9bd-490c-a08d-43f7904ec665": {
+          "type": "title",
+          "settings": {
+            "center_text": true,
+            "heading_style": "page-title",
+            "subheading_style": "subheading-font",
+            "show_date": true,
+            "show_author": false,
+            "show_number_of_comments": true
+          }
+        },
+        "99cd4e20-ceae-4541-bd89-eadf95296166": {
+          "type": "featured_image",
+          "settings": {
+            "content_width": "wide",
+            "media_ratio": "16/9",
+            "focal_point": "center center"
+          }
+        },
+        "aed0116e-0c48-4718-8ef9-4e52ba6b17ea": {
+          "type": "content",
+          "settings": {}
+        },
+        "9ced52d3-cfd4-4d84-9e73-ceaf3d59441f": {
+          "type": "tags",
+          "settings": {
+            "text_style": "body-font"
+          }
+        },
+        "6cafa9fc-978e-4f51-b051-45c142687f64": {
+          "type": "share",
+          "settings": {
+            "display_collapsible_link": false,
+            "show_only_icons": false,
+            "text_style": "body-font"
+          }
+        },
+        "971eb17d-9553-41ac-a2e6-2c47c76fd577": {
+          "type": "prev_and_next",
+          "settings": {
+            "button_label": "Go to blog",
+            "button_icon": "",
+            "swap_button_icon": false
+          }
+        },
+        "33b8c983-4513-4870-aca1-c90aafe1dd19": {
+          "type": "comments",
+          "settings": {
+            "heading_style": "section-heading"
+          }
+        }
+      },
+      "block_order": [
+        "5ce261ff-a9bd-490c-a08d-43f7904ec665",
+        "99cd4e20-ceae-4541-bd89-eadf95296166",
+        "aed0116e-0c48-4718-8ef9-4e52ba6b17ea",
+        "9ced52d3-cfd4-4d84-9e73-ceaf3d59441f",
+        "6cafa9fc-978e-4f51-b051-45c142687f64",
+        "971eb17d-9553-41ac-a2e6-2c47c76fd577",
+        "33b8c983-4513-4870-aca1-c90aafe1dd19"
+      ],
+      "settings": {
+        "content_width": "regular",
+        "grid_style": "alternative",
+        "disable_max_width": false,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "top_spacing": 0,
+        "bottom_spacing": 1
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs_zxymR7",
+    "main-article"
+  ]
+}

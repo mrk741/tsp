@@ -1,0 +1,86 @@
+.section-social-grid .banner__wrapper {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.section-social-grid .banner__content-wrapper {
+    max-width: none;
+}
+
+.section-social-grid .banner__container-content.side-margins {
+    padding: var(--inner-section-padding) var(--side-margin)!important;
+}
+
+.section-social-grid .grid-item {
+    height: fit-content;
+}
+
+.section-social-grid .grid-item.info-card {
+    height: 100%;
+}
+
+.social-grid__item {
+    display: flex;
+    border-radius: var(--images-and-sections-radius);
+    -webkit-border-radius: var(--images-and-sections-radius);
+    overflow: clip;
+    position: relative;
+}
+
+a.social-grid__item img,
+a.social-grid__item video {
+    transition: transform var(--animation-duration) var(--transition-timing-function);
+}
+
+.social-grid__icon-wrapper {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: clip;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset-inline-end: 16px;
+    bottom: -4px;
+    background-color: rgb(var(--layout-text-color));
+    transition: bottom var(--animation-duration) var(--transition-timing-function), opacity var(--animation-duration) var(--transition-timing-function);
+    opacity: 0!important;
+    pointer-events: none;
+}
+.social-grid__icon-wrapper svg {
+    fill: rgb(var(--layout-bg-color));
+}
+
+@media (hover: hover) {
+    a.social-grid__item:hover img,
+    a.social-grid__item:hover video {
+        transform: scale(1.03);
+    }
+    a.social-grid__item:hover .social-grid__icon-wrapper {
+        opacity: 1!important;
+        pointer-events: auto;
+        bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    a.social-grid__item .social-grid__icon-wrapper {
+        opacity: 1!important;
+        pointer-events: auto;
+        bottom: 16px;
+    }
+    .section-social-grid .banner__content {
+        max-width: none!important;
+        width: 100%;
+    }
+    .section-social-grid .banner__content-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-social-grid .content-below .banner__content-wrapper {
+        padding: 0!important;
+    }
+}

@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main-cart": {
+      "type": "main-cart",
+      "blocks": {
+        "price_gXyEhW": {
+          "type": "price",
+          "settings": {
+            "show_saved": true,
+            "heading_style": "subheading-font"
+          }
+        },
+        "checkout_button_pxY9Ak": {
+          "type": "checkout_button",
+          "settings": {
+            "use_main_button": true
+          }
+        },
+        "order_note_EXrTtx": {
+          "type": "order_note",
+          "settings": {
+            "show_collapsible": true,
+            "order_heading": "Order note",
+            "heading_style": "subheading-font",
+            "order_label": "Add a note to your order",
+            "order_placeholder": "Write your comment for seller here"
+          }
+        },
+        "shipping_calculator_pTK6yH": {
+          "type": "shipping_calculator",
+          "settings": {
+            "shipping_heading": "Estimate shipping",
+            "heading_style": "subheading-font",
+            "shipping_country": "United States"
+          }
+        }
+      },
+      "block_order": [
+        "price_gXyEhW",
+        "checkout_button_pxY9Ak",
+        "order_note_EXrTtx",
+        "shipping_calculator_pTK6yH"
+      ],
+      "settings": {
+        "heading": "",
+        "hide_heading": false,
+        "center_text": true,
+        "show_order_weight": true,
+        "show_taxes": true,
+        "show_accelerated_buttons": true,
+        "show_continue_shopping": true,
+        "shopping_link": "",
+        "show_border": true,
+        "border_radius": "3px",
+        "grid_style": "alternative",
+        "disable_max_width": true,
+        "show_bottom_line": false,
+        "color_scheme": "background-3",
+        "summary_block_color_scheme": "background-1",
+        "top_spacing": 1,
+        "bottom_spacing": 1
+      }
+    }
+  },
+  "order": [
+    "main-cart"
+  ]
+}

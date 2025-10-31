@@ -1,0 +1,703 @@
+{% doc %}
+  @prompt
+    i need two image banners to be horizontally aligned, there should be space between them, need to increase there height and reduce their width, they should be clickable, i should be able to attach links to it, dont add opacity, no need to add title as well, the width is reduced a lot, increase it a little and make the banner dont touch each other, one should be aligned on left and one on the right, increase height and width a little more, okay, now after these two images, i need you to add another single image container, just like you added here, same height and width, but one change, there will be one only and it will be centre aligned, okay, now after the single image we added add two image horizontally aligned, just like we did previusly, add a single image after that, just like we did previusly, add a piece of scotch tape on the top right corner of it, randomly, it should be a little yellowed and cutted unevenly, should feel like we are pasting pictures using tape, remove the hover effect , make the tape look more realisti
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-dual-banner-container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    gap: {{ block.settings.banner_spacing }}px;
+    width: 100%;
+    margin-bottom: {{ block.settings.section_spacing }}px;
+  }
+
+  .ai-dual-banner-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: visible;
+    border-radius: {{ block.settings.border_radius }}px;
+    width: {{ block.settings.banner_width }}px;
+  }
+
+  .ai-dual-banner-item-{{ ai_gen_id }}:first-child {
+    align-self: flex-start;
+  }
+
+  .ai-dual-banner-item-{{ ai_gen_id }}:last-child {
+    align-self: flex-end;
+  }
+
+  .ai-single-banner-container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: {{ block.settings.section_spacing }}px;
+  }
+
+  .ai-single-banner-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: visible;
+    border-radius: {{ block.settings.border_radius }}px;
+    width: {{ block.settings.banner_width }}px;
+  }
+
+  .ai-second-dual-banner-container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    gap: {{ block.settings.banner_spacing }}px;
+    width: 100%;
+    margin-bottom: {{ block.settings.section_spacing }}px;
+  }
+
+  .ai-second-dual-banner-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: visible;
+    border-radius: {{ block.settings.border_radius }}px;
+    width: {{ block.settings.banner_width }}px;
+  }
+
+  .ai-second-dual-banner-item-{{ ai_gen_id }}:first-child {
+    align-self: flex-start;
+  }
+
+  .ai-second-dual-banner-item-{{ ai_gen_id }}:last-child {
+    align-self: flex-end;
+  }
+
+  .ai-final-single-banner-container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ai-final-single-banner-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: visible;
+    border-radius: {{ block.settings.border_radius }}px;
+    width: {{ block.settings.banner_width }}px;
+  }
+
+  .ai-dual-banner-link-{{ ai_gen_id }},
+  .ai-single-banner-link-{{ ai_gen_id }},
+  .ai-second-dual-banner-link-{{ ai_gen_id }},
+  .ai-final-single-banner-link-{{ ai_gen_id }} {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-dual-banner-image-{{ ai_gen_id }},
+  .ai-single-banner-image-{{ ai_gen_id }},
+  .ai-second-dual-banner-image-{{ ai_gen_id }},
+  .ai-final-single-banner-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.banner_height }}px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-dual-banner-placeholder-{{ ai_gen_id }},
+  .ai-single-banner-placeholder-{{ ai_gen_id }},
+  .ai-second-dual-banner-placeholder-{{ ai_gen_id }},
+  .ai-final-single-banner-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.banner_height }}px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-dual-banner-placeholder-{{ ai_gen_id }} svg,
+  .ai-single-banner-placeholder-{{ ai_gen_id }} svg,
+  .ai-second-dual-banner-placeholder-{{ ai_gen_id }} svg,
+  .ai-final-single-banner-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0.5;
+  }
+
+  .ai-dual-banner-empty-state-{{ ai_gen_id }},
+  .ai-single-banner-empty-state-{{ ai_gen_id }},
+  .ai-second-dual-banner-empty-state-{{ ai_gen_id }},
+  .ai-final-single-banner-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-scotch-tape-{{ ai_gen_id }} {
+    position: absolute;
+    top: -18px;
+    right: 25px;
+    width: 70px;
+    height: 35px;
+    background: linear-gradient(135deg, 
+      #f8f5ea 0%, 
+      #f2ede0 15%, 
+      #ede8d6 30%, 
+      #e8e2cc 50%, 
+      #e3dcc2 70%, 
+      #ded6b8 85%, 
+      #d9d0ae 100%);
+    border-radius: 3px 2px 4px 1px;
+    transform: rotate(15deg);
+    z-index: 10;
+    box-shadow: 
+      0 3px 8px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(200, 185, 155, 0.4);
+  }
+
+  .ai-scotch-tape-{{ ai_gen_id }}:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      repeating-linear-gradient(
+        88deg,
+        transparent,
+        transparent 3px,
+        rgba(220, 210, 185, 0.12) 3px,
+        rgba(220, 210, 185, 0.12) 6px
+      ),
+      repeating-linear-gradient(
+        2deg,
+        transparent,
+        transparent 8px,
+        rgba(200, 185, 155, 0.08) 8px,
+        rgba(200, 185, 155, 0.08) 10px
+      );
+    border-radius: 3px 2px 4px 1px;
+  }
+
+  .ai-scotch-tape-{{ ai_gen_id }}:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, #f8f5ea 0%, #e8e2cc 100%);
+    transform: rotate(45deg);
+    border-radius: 2px 1px 3px 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-scotch-tape-alt-{{ ai_gen_id }} {
+    position: absolute;
+    top: -15px;
+    right: 18px;
+    width: 65px;
+    height: 32px;
+    background: linear-gradient(145deg, 
+      #f5f2e8 0%, 
+      #f0ede2 20%, 
+      #ebe6d8 40%, 
+      #e6dfce 60%, 
+      #e1d8c4 80%, 
+      #dcd1ba 100%);
+    border-radius: 2px 4px 1px 3px;
+    transform: rotate(-12deg);
+    z-index: 10;
+    box-shadow: 
+      0 2px 6px rgba(0, 0, 0, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.25),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(195, 180, 150, 0.35);
+  }
+
+  .ai-scotch-tape-alt-{{ ai_gen_id }}:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      repeating-linear-gradient(
+        82deg,
+        transparent,
+        transparent 4px,
+        rgba(215, 205, 180, 0.1) 4px,
+        rgba(215, 205, 180, 0.1) 7px
+      ),
+      repeating-linear-gradient(
+        -8deg,
+        transparent,
+        transparent 9px,
+        rgba(195, 180, 150, 0.06) 9px,
+        rgba(195, 180, 150, 0.06) 11px
+      );
+    border-radius: 2px 4px 1px 3px;
+  }
+
+  .ai-scotch-tape-alt-{{ ai_gen_id }}:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(30deg, #f5f2e8 0%, #e6dfce 100%);
+    transform: rotate(30deg);
+    border-radius: 1px 3px 2px 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-dual-banner-container-{{ ai_gen_id }},
+    .ai-second-dual-banner-container-{{ ai_gen_id }} {
+      flex-direction: {{ block.settings.mobile_layout }};
+      gap: {{ block.settings.banner_spacing | times: 0.75 }}px;
+      justify-content: center;
+      margin-bottom: {{ block.settings.section_spacing | times: 0.75 }}px;
+    }
+
+    .ai-single-banner-container-{{ ai_gen_id }},
+    .ai-final-single-banner-container-{{ ai_gen_id }} {
+      margin-bottom: {{ block.settings.section_spacing | times: 0.75 }}px;
+    }
+
+    .ai-dual-banner-item-{{ ai_gen_id }},
+    .ai-single-banner-item-{{ ai_gen_id }},
+    .ai-second-dual-banner-item-{{ ai_gen_id }},
+    .ai-final-single-banner-item-{{ ai_gen_id }} {
+      width: 100%;
+      max-width: {{ block.settings.banner_width }}px;
+      align-self: center;
+    }
+
+    .ai-dual-banner-image-{{ ai_gen_id }},
+    .ai-dual-banner-placeholder-{{ ai_gen_id }},
+    .ai-single-banner-image-{{ ai_gen_id }},
+    .ai-single-banner-placeholder-{{ ai_gen_id }},
+    .ai-second-dual-banner-image-{{ ai_gen_id }},
+    .ai-second-dual-banner-placeholder-{{ ai_gen_id }},
+    .ai-final-single-banner-image-{{ ai_gen_id }},
+    .ai-final-single-banner-placeholder-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_banner_height }}px;
+    }
+
+    .ai-scotch-tape-{{ ai_gen_id }},
+    .ai-scotch-tape-alt-{{ ai_gen_id }} {
+      width: 50px;
+      height: 25px;
+      top: -12px;
+      right: 18px;
+    }
+  }
+{% endstyle %}
+
+<div {{ block.shopify_attributes }}>
+  <div class="ai-dual-banner-container-{{ ai_gen_id }}">
+    <div class="ai-dual-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_1_link != blank %}
+        <a href="{{ block.settings.banner_1_link }}" class="ai-dual-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-dual-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_1_image %}
+          <img
+            src="{{ block.settings.banner_1_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_1_image.alt | escape }}"
+            class="ai-dual-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_1_image.width }}"
+            height="{{ block.settings.banner_1_image.height }}"
+          >
+        {% else %}
+          <div class="ai-dual-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-dual-banner-empty-state-{{ ai_gen_id }}">
+              Add first banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_1_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-dual-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-alt-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_2_link != blank %}
+        <a href="{{ block.settings.banner_2_link }}" class="ai-dual-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-dual-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_2_image %}
+          <img
+            src="{{ block.settings.banner_2_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_2_image.alt | escape }}"
+            class="ai-dual-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_2_image.width }}"
+            height="{{ block.settings.banner_2_image.height }}"
+          >
+        {% else %}
+          <div class="ai-dual-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-dual-banner-empty-state-{{ ai_gen_id }}">
+              Add second banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_2_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="ai-single-banner-container-{{ ai_gen_id }}">
+    <div class="ai-single-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_3_link != blank %}
+        <a href="{{ block.settings.banner_3_link }}" class="ai-single-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-single-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_3_image %}
+          <img
+            src="{{ block.settings.banner_3_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_3_image.alt | escape }}"
+            class="ai-single-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_3_image.width }}"
+            height="{{ block.settings.banner_3_image.height }}"
+          >
+        {% else %}
+          <div class="ai-single-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-single-banner-empty-state-{{ ai_gen_id }}">
+              Add third banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_3_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="ai-second-dual-banner-container-{{ ai_gen_id }}">
+    <div class="ai-second-dual-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-alt-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_4_link != blank %}
+        <a href="{{ block.settings.banner_4_link }}" class="ai-second-dual-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-second-dual-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_4_image %}
+          <img
+            src="{{ block.settings.banner_4_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_4_image.alt | escape }}"
+            class="ai-second-dual-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_4_image.width }}"
+            height="{{ block.settings.banner_4_image.height }}"
+          >
+        {% else %}
+          <div class="ai-second-dual-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-second-dual-banner-empty-state-{{ ai_gen_id }}">
+              Add fourth banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_4_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-second-dual-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_5_link != blank %}
+        <a href="{{ block.settings.banner_5_link }}" class="ai-second-dual-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-second-dual-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_5_image %}
+          <img
+            src="{{ block.settings.banner_5_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_5_image.alt | escape }}"
+            class="ai-second-dual-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_5_image.width }}"
+            height="{{ block.settings.banner_5_image.height }}"
+          >
+        {% else %}
+          <div class="ai-second-dual-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-second-dual-banner-empty-state-{{ ai_gen_id }}">
+              Add fifth banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_5_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="ai-final-single-banner-container-{{ ai_gen_id }}">
+    <div class="ai-final-single-banner-item-{{ ai_gen_id }}">
+      {% if block.settings.show_tape %}
+        <div class="ai-scotch-tape-alt-{{ ai_gen_id }}"></div>
+      {% endif %}
+      {% if block.settings.banner_6_link != blank %}
+        <a href="{{ block.settings.banner_6_link }}" class="ai-final-single-banner-link-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-final-single-banner-link-{{ ai_gen_id }}">
+      {% endif %}
+        {% if block.settings.banner_6_image %}
+          <img
+            src="{{ block.settings.banner_6_image | image_url: width: 800 }}"
+            alt="{{ block.settings.banner_6_image.alt | escape }}"
+            class="ai-final-single-banner-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.banner_6_image.width }}"
+            height="{{ block.settings.banner_6_image.height }}"
+          >
+        {% else %}
+          <div class="ai-final-single-banner-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-final-single-banner-empty-state-{{ ai_gen_id }}">
+              Add sixth banner image
+            </div>
+          </div>
+        {% endif %}
+      {% if block.settings.banner_6_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Six image banners",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tape",
+      "label": "Show scotch tape",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "banner_spacing",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Space between banners",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_spacing",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Space between sections",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "banner_height",
+      "min": 400,
+      "max": 900,
+      "step": 20,
+      "unit": "px",
+      "label": "Banner height",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "banner_width",
+      "min": 300,
+      "max": 700,
+      "step": 20,
+      "unit": "px",
+      "label": "Banner width",
+      "default": 560
+    },
+    {
+      "type": "range",
+      "id": "mobile_banner_height",
+      "min": 250,
+      "max": 600,
+      "step": 25,
+      "unit": "px",
+      "label": "Mobile banner height",
+      "default": 450
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        {
+          "value": "row",
+          "label": "Side by side"
+        },
+        {
+          "value": "column",
+          "label": "Stacked"
+        }
+      ],
+      "default": "column"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Corner radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "First banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Second banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Third banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Fourth banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Fifth banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Sixth banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "banner_6_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Six image banners"
+    }
+  ]
+}
+{% endschema %}

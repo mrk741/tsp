@@ -1,0 +1,55 @@
+.page-grid .collapsible-tabs__content {
+    grid-template-columns: repeat(var(--grid-columns), calc((100% - (var(--page-column-gap) * (var(--grid-columns) - 1))) / var(--grid-columns)));
+}
+
+.alternative-grid .collapsible-tabs__content {
+    grid-template-columns: repeat(var(--grid-columns), calc((100% - (var(--alt-column-gap) * (var(--grid-columns) - 1))) / var(--grid-columns)));
+}
+
+.secondary-grid .collapsible-tabs__content {
+    grid-template-columns: repeat(var(--grid-columns), calc((100% - (var(--second-column-gap) * (var(--grid-columns) - 1))) / var(--grid-columns)));
+}
+
+.reverse-order .collapsible-tabs__media {
+    order: -1;
+}
+
+.collapsible-tabs__media-wrapper {
+    display: flex;
+    border-radius: var(--images-and-sections-radius);
+    -webkit-border-radius: var(--images-and-sections-radius);
+    overflow: clip;
+    max-width: 100%;
+}
+
+.topic-block {
+    gap: var(--block-padding-s);
+}
+
+.topic-block .button {
+    width: fit-content;
+}
+
+.collapsible-tabs .topic-block + .accordion {
+    margin-top: var(--block-padding);
+    border-block-start: var(--line-thickness) solid rgb(var(--lines-color));
+}
+
+.collapsible-tabs__content + .collapsible-tabs__button {
+    margin-top: var(--block-padding);
+}
+
+.collapsible-tabs__button.link-button {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 768px) {
+    .collapsible-tabs__media {
+        order: -1;
+    }
+
+    .collapsible-tabs__content.grid {
+        column-gap: 0;
+        row-gap: var(--block-padding);
+    }
+}

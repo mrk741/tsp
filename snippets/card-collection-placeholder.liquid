@@ -1,0 +1,22 @@
+{% liquid
+  if card_style
+    assign collection_card_style = card_style
+  else 
+    assign collection_card_style = settings.collection_card_style
+  endif
+%}
+
+<div class="card-collection{% if full_width %} card-collection--full-width{% endif %} card-collection--{{ collection_card_style }} color-{{ card_color_scheme }} {% if show_collection_card_border %}with-border{% endif %}{% if card_color_scheme != parent_color_scheme %} with-color{% endif %}">
+    <div class="card-collection__media aspect-ratio">
+        <div class="card__image card__image-placeholder" {% if settings.disable_right_click %}oncontextmenu="return false"{% endif %}>
+            {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+    </div>
+    <h2 class="card-collection__title {% if settings.center_collection_card_content %}center{% endif %} secondary-heading {% if settings.uppercase_secondary_headings %}uppercase{% endif %}">{{ 'collection.collection_title_placeholder' | t }}
+      {%- if settings.show_arrow -%}
+        <span class="card-collection__icon">
+          {%- render 'glyphs_arrows', icon: 'arrow-right' -%}
+        </span>
+      {%- endif -%}
+    </h2>
+</div>

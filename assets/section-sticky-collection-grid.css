@@ -1,0 +1,23 @@
+.sticky-collection-grid__info-wrapper.sticky-content {
+    position: sticky;
+    top: var(--top-sticky-content);
+}
+
+.section-sticky-collection-grid .section-radius {
+    overflow: visible;
+}
+
+.section-sticky-collection-grid .card-collection {
+    height: fit-content;
+}
+
+.section-sticky-collection-grid .card-collection__icon {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px)  {
+    .sticky-collection-grid {
+        column-gap: 0px;
+    }
+}

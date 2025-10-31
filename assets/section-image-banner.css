@@ -1,0 +1,32 @@
+.image-banner__media-block {
+    flex: 0 0 50%;
+}
+
+.banner__media:not(:has( .image-banner__media-block--mobile)) .image-banner__media-block:only-child,
+.banner__media:has( .image-banner__media-block--mobile) .image-banner__media-block--desktop:not( :has( + .image-banner__media-block--desktop)) {
+    flex: 0 0 100%;
+}
+
+.banner__media:has( .image-banner__media-block--mobile) .image-banner__media-block--desktop + .image-banner__media-block--desktop {
+    flex: 0 0 50%!important;
+}
+
+.image-banner__media-block--mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {    
+    .only-first .image-banner__media-block,
+    .image-banner__media-block--mobile {
+        flex: 0 0 100%;
+    }
+
+    .only-first .image-banner__media-block:nth-child(2),
+    .image-banner__media-block--desktop {
+        display: none;
+    }
+
+    .image-banner__media-block--mobile {
+        display: flex;
+    }
+}

@@ -1,0 +1,116 @@
+.contact-form {
+    --buttons-gap: 16px;
+}
+
+.contact-form .narrow {
+    max-width: 480px;
+    margin-inline-end: auto;
+}
+
+.contact-form .regular {
+    max-width: 720px;
+    margin-inline-end: auto;
+}
+
+.reverse-order .contact-form__form {
+    order: -1;
+}
+
+.contact-form__content-wrapper {
+    font-size: 0;
+}
+
+.contact-form__content-wrapper > .line-container + *:not(.button-block),
+.contact-form__content-wrapper > .spacer + *:not(.button-block) {
+    margin-top: 0px;
+}
+
+.contact-form__content-wrapper .subheading-block + .heading-block,
+.contact-form__content-wrapper .heading-block + .subheading-block {
+    margin-top: var(--block-padding-s);
+}
+
+.contact-form__content-wrapper .button-block,
+.contact-form__content-wrapper .block-icon {
+    margin-inline-end: var(--buttons-gap);
+    margin-inline-start: 0;
+}
+
+.contact-form form-state {
+    display: block;
+}
+
+.contact__button + div {
+    margin-top: var(--block-padding-s);
+}
+
+.contact-form .input {
+    width: 100%;
+    background-color: transparent;
+}
+
+
+
+.field-line-style .input--text,
+.field-line-style .input {
+    border: none;
+    border-block-end: 2px solid rgb(var(--layout-text-color));
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    --field-radius: 0px;
+}
+
+.field-line-style .select-icon {
+    inset-inline-end: 0px;
+}
+
+.field-line-style select.input {
+    padding-inline-end: 16px;
+}
+
+.form-centered .contact-form__form {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.form-centered .show_container  {
+    max-width: calc(440px + (var(--inner-section-padding) * 2));
+}
+
+.contact-form__form.show-container {
+    border-radius: var(--images-and-sections-radius);
+    -webkit-border-radius: var(--images-and-sections-radius);
+    overflow: clip;
+}
+
+.contact-form .form-status,
+.contact-form .email-no-valid:not(.visually-hidden) {
+    margin-bottom: var(--block-padding-s);
+}
+
+@media (hover: hover) {
+    .field-line-style select:hover {
+        border: none;
+        border-block-end: 2px solid rgba(var(--layout-text-color),.5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        --buttons-gap: 12px;
+    }
+
+    .contact-form__card.grid {
+        column-gap: 0;
+        row-gap: var(--block-padding);
+    }
+
+    .contact-form__form {
+        order: -1;
+    }
+
+    .contact-form .narrow,
+    .contact-form .regular {
+        max-width: 100%;
+    }
+}

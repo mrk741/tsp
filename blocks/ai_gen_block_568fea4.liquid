@@ -1,0 +1,1369 @@
+{% doc %}
+  @prompt
+    I need a custom Shopify theme section that is fully editable in the theme editor and optimized for both desktop and mobile. The section should start with two side-by-side images of equal height and width, with a small space between them and consistent left and right padding so they don’t touch the edges of the page. These images should support mobile-specific versions and allow optional video replacement. Below these images, there should be a full-width banner image that matches the total width of the two top images including their spacing, and also supports mobile versions or video. After the banner, include a two-column layout: on the left, a product card that displays the product title, price, compare-at price, and image or video (with mobile alternate); and on the right, two text fields—one for a heading and one for body text. This section should also allow the layout to be reversed. Next, include three product cards in a row, each showing the product image (or video), title, and pricing details, with equal spacing and mobile-stacking support as well as mobile-specific image overrides. Finally, add a full-width banner at the bottom that matches the combined width and spacing of the three product cards, and supports either an image or video with mobile variants. All spacing across elements should be consistent, vertical spacing should be minimal, and everything should be easily editable via the Shopify theme editor, including images, videos, text, product selection, and layout options., i need you to increase the height of all the elements, like images, banners, etc, we need to add two products their height should be the same as the height of first two images we have this section will be after the three products we are showing, after the last banner, we need to add four products aligned horizontally, there should be an option for us to disable a specific section if we want, like to disable that 4 products we have or some thing like that, we should be able to hide or show it, increase the size of the images and product cards as well, the text we are showing on the right hand side, the heading is not looking goodm its douling, the text spacing in the heading text isvery less, increase that, its too much increased now, keept it moderate, reduce the spacing between the sections as well, horizontal spacing, heading should be large and bold, it should be visible and it should not have that much letter spacing, i want you to give the option in the theme editor to change the text size spacing etc
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-custom-section-{{ ai_gen_id }} {
+    padding: 0 {{ settings.left_and_right_margins }}px;
+    margin-bottom: {{ settings.spacing_between_sections }}px;
+  }
+
+  .ai-custom-section__container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.vertical_spacing }}px;
+  }
+
+  .ai-custom-section__top-images-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ block.settings.image_spacing }}px;
+  }
+
+  .ai-custom-section__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    border-radius: {{ settings.images_and_sections_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-custom-section__video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-custom-section__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-custom-section__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .ai-custom-section__banner-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.banner_height }}px;
+    border-radius: {{ settings.images_and_sections_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__two-column-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: {% if block.settings.reverse_layout %}1fr 1fr{% else %}1fr 1fr{% endif %};
+    gap: {{ block.settings.column_spacing }}px;
+    align-items: start;
+  }
+
+  .ai-custom-section__product-card-{{ ai_gen_id }} {
+    {% if block.settings.reverse_layout %}order: 2;{% endif %}
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-custom-section__text-content-{{ ai_gen_id }} {
+    {% if block.settings.reverse_layout %}order: 1;{% endif %}
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.text_content_gap }}px;
+  }
+
+  .ai-custom-section__product-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.product_image_height }}px;
+    border-radius: {{ settings.card_images_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__product-title-{{ ai_gen_id }} {
+    font-family: {{ settings.body_font.family }}, {{ settings.body_font.fallback_families }};
+    font-size: {{ settings.body_base_size | times: block.settings.product_title_scale | divided_by: 100.0 }}px;
+    font-weight: 600;
+    color: {{ settings.layout_text_color }};
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .ai-custom-section__product-price-{{ ai_gen_id }} {
+    font-family: {{ settings.body_font.family }}, {{ settings.body_font.fallback_families }};
+    font-size: {{ settings.body_base_size | times: block.settings.product_price_scale | divided_by: 100.0 }}px;
+    color: {{ settings.layout_text_color }};
+    margin: 0;
+  }
+
+  .ai-custom-section__compare-price-{{ ai_gen_id }} {
+    text-decoration: line-through;
+    color: {{ settings.sale_color }};
+    margin-left: 8px;
+  }
+
+  .ai-custom-section__text-heading-{{ ai_gen_id }} {
+    font-family: {% if settings.font_secondary_headings == 'main' %}{{ settings.heading_font_main.family }}, {{ settings.heading_font_main.fallback_families }}{% else %}{{ settings.heading_font_secondary.family }}, {{ settings.heading_font_secondary.fallback_families }}{% endif %};
+    font-size: {{ block.settings.heading_font_size }}px;
+    font-weight: {{ block.settings.heading_font_weight }};
+    color: {{ settings.layout_text_color }};
+    margin: 0;
+    line-height: {{ block.settings.heading_line_height }};
+    letter-spacing: {{ block.settings.heading_letter_spacing | divided_by: 100.0 }}em;
+    {% if block.settings.heading_uppercase %}text-transform: uppercase;{% endif %}
+    margin-bottom: {{ block.settings.heading_bottom_margin }}px;
+  }
+
+  .ai-custom-section__text-body-{{ ai_gen_id }} {
+    font-family: {{ settings.body_font.family }}, {{ settings.body_font.fallback_families }};
+    font-size: {{ block.settings.body_font_size }}px;
+    color: {{ settings.layout_text_color }};
+    line-height: {{ block.settings.body_line_height }};
+    margin: 0;
+    letter-spacing: {{ block.settings.body_letter_spacing | divided_by: 100.0 }}em;
+  }
+
+  .ai-custom-section__text-body-{{ ai_gen_id }} p {
+    margin: 0 0 {{ block.settings.paragraph_spacing }}px 0;
+  }
+
+  .ai-custom-section__text-body-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-custom-section__three-products-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.product_grid_spacing }}px;
+  }
+
+  .ai-custom-section__product-grid-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-custom-section__product-grid-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.product_grid_image_height }}px;
+    border-radius: {{ settings.card_images_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__two-products-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ block.settings.image_spacing }}px;
+  }
+
+  .ai-custom-section__two-product-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-custom-section__two-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    border-radius: {{ settings.card_images_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__bottom-banner-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.bottom_banner_height }}px;
+    border-radius: {{ settings.images_and_sections_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__four-products-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: {{ block.settings.four_product_spacing }}px;
+  }
+
+  .ai-custom-section__four-product-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-custom-section__four-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.four_product_image_height }}px;
+    border-radius: {{ settings.card_images_radius }};
+    overflow: hidden;
+  }
+
+  .ai-custom-section__hidden-{{ ai_gen_id }} {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-custom-section-{{ ai_gen_id }} {
+      padding: 0 {{ settings.left_and_right_margins | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__top-images-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.image_spacing | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_image_height }}px;
+    }
+
+    .ai-custom-section__banner-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_banner_height }}px;
+    }
+
+    .ai-custom-section__two-column-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.column_spacing | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__product-card-{{ ai_gen_id }},
+    .ai-custom-section__text-content-{{ ai_gen_id }} {
+      order: unset;
+    }
+
+    .ai-custom-section__product-image-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_product_image_height }}px;
+    }
+
+    .ai-custom-section__three-products-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.product_grid_spacing | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__product-grid-image-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_product_grid_image_height }}px;
+    }
+
+    .ai-custom-section__two-products-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.image_spacing | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__two-product-image-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_image_height }}px;
+    }
+
+    .ai-custom-section__bottom-banner-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_bottom_banner_height }}px;
+    }
+
+    .ai-custom-section__four-products-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.four_product_spacing | times: 0.75 }}px;
+    }
+
+    .ai-custom-section__four-product-image-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_four_product_image_height }}px;
+    }
+
+    .ai-custom-section__text-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_heading_font_size }}px;
+    }
+
+    .ai-custom-section__text-body-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_body_font_size }}px;
+    }
+
+    .ai-custom-section__product-title-{{ ai_gen_id }} {
+      font-size: {{ settings.body_base_size | times: block.settings.product_title_scale | times: 0.9 | divided_by: 100.0 }}px;
+    }
+
+    .ai-custom-section__product-price-{{ ai_gen_id }} {
+      font-size: {{ settings.body_base_size | times: block.settings.product_price_scale | times: 0.9 | divided_by: 100.0 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-custom-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-custom-section__container-{{ ai_gen_id }}">
+    
+    {% if block.settings.show_top_images %}
+      <div class="ai-custom-section__top-images-{{ ai_gen_id }}">
+        <div class="ai-custom-section__image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.top_image_1_video %}
+            <video 
+              class="ai-custom-section__video-{{ ai_gen_id }}"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="{{ block.settings.top_image_1_video }}" type="video/mp4">
+            </video>
+          {% elsif block.settings.top_image_1 %}
+            <picture>
+              {% if block.settings.top_image_1_mobile %}
+                <source media="(max-width: 749px)" srcset="{{ block.settings.top_image_1_mobile | image_url: width: 800 }}">
+              {% endif %}
+              <img
+                src="{{ block.settings.top_image_1 | image_url: width: 1200 }}"
+                alt="{{ block.settings.top_image_1.alt | escape }}"
+                class="ai-custom-section__image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{{ block.settings.top_image_1.width }}"
+                height="{{ block.settings.top_image_1.height }}"
+              >
+            </picture>
+          {% else %}
+            <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="ai-custom-section__image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.top_image_2_video %}
+            <video 
+              class="ai-custom-section__video-{{ ai_gen_id }}"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="{{ block.settings.top_image_2_video }}" type="video/mp4">
+            </video>
+          {% elsif block.settings.top_image_2 %}
+            <picture>
+              {% if block.settings.top_image_2_mobile %}
+                <source media="(max-width: 749px)" srcset="{{ block.settings.top_image_2_mobile | image_url: width: 800 }}">
+              {% endif %}
+              <img
+                src="{{ block.settings.top_image_2 | image_url: width: 1200 }}"
+                alt="{{ block.settings.top_image_2.alt | escape }}"
+                class="ai-custom-section__image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{{ block.settings.top_image_2.width }}"
+                height="{{ block.settings.top_image_2.height }}"
+              >
+            </picture>
+          {% else %}
+            <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_banner %}
+      <div class="ai-custom-section__banner-{{ ai_gen_id }}">
+        {% if block.settings.banner_video %}
+          <video 
+            class="ai-custom-section__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.banner_video }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.banner_image %}
+          <picture>
+            {% if block.settings.banner_image_mobile %}
+              <source media="(max-width: 749px)" srcset="{{ block.settings.banner_image_mobile | image_url: width: 800 }}">
+            {% endif %}
+            <img
+              src="{{ block.settings.banner_image | image_url: width: 2000 }}"
+              alt="{{ block.settings.banner_image.alt | escape }}"
+              class="ai-custom-section__image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.banner_image.width }}"
+              height="{{ block.settings.banner_image.height }}"
+            >
+          </picture>
+        {% else %}
+          <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_two_column %}
+      <div class="ai-custom-section__two-column-{{ ai_gen_id }}">
+        <div class="ai-custom-section__product-card-{{ ai_gen_id }}">
+          {% if block.settings.featured_product %}
+            <div class="ai-custom-section__product-image-{{ ai_gen_id }}">
+              {% if block.settings.product_video %}
+                <video 
+                  class="ai-custom-section__video-{{ ai_gen_id }}"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source src="{{ block.settings.product_video }}" type="video/mp4">
+                </video>
+              {% elsif block.settings.featured_product.featured_image %}
+                <picture>
+                  {% if block.settings.product_image_mobile %}
+                    <source media="(max-width: 749px)" srcset="{{ block.settings.product_image_mobile | image_url: width: 600 }}">
+                  {% endif %}
+                  <img
+                    src="{{ block.settings.featured_product.featured_image | image_url: width: 800 }}"
+                    alt="{{ block.settings.featured_product.featured_image.alt | escape }}"
+                    class="ai-custom-section__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="{{ block.settings.featured_product.featured_image.width }}"
+                    height="{{ block.settings.featured_product.featured_image.height }}"
+                  >
+                </picture>
+              {% else %}
+                <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+                  {{ 'product-apparel-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+            
+            <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">
+              {{ block.settings.featured_product.title }}
+            </h3>
+            
+            <div class="ai-custom-section__product-price-{{ ai_gen_id }}">
+              {{ block.settings.featured_product.price | money }}
+              {% if block.settings.featured_product.compare_at_price > block.settings.featured_product.price %}
+                <span class="ai-custom-section__compare-price-{{ ai_gen_id }}">
+                  {{ block.settings.featured_product.compare_at_price | money }}
+                </span>
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="ai-custom-section__product-image-{{ ai_gen_id }}">
+              <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+                {{ 'product-apparel-1' | placeholder_svg_tag }}
+              </div>
+            </div>
+            <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">Product title</h3>
+            <div class="ai-custom-section__product-price-{{ ai_gen_id }}">PKR 0.00</div>
+          {% endif %}
+        </div>
+
+        <div class="ai-custom-section__text-content-{{ ai_gen_id }}">
+          {% if block.settings.text_heading != blank %}
+            <h2 class="ai-custom-section__text-heading-{{ ai_gen_id }}">
+              {{ block.settings.text_heading }}
+            </h2>
+          {% endif %}
+          
+          {% if block.settings.text_body != blank %}
+            <div class="ai-custom-section__text-body-{{ ai_gen_id }}">
+              {{ block.settings.text_body }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_three_products %}
+      <div class="ai-custom-section__three-products-{{ ai_gen_id }}">
+        {% for i in (1..3) %}
+          {% liquid
+            assign product_key = 'product_' | append: i
+            assign product_video_key = 'product_' | append: i | append: '_video'
+            assign product_image_mobile_key = 'product_' | append: i | append: '_image_mobile'
+            assign product = block.settings[product_key]
+            assign product_video = block.settings[product_video_key]
+            assign product_image_mobile = block.settings[product_image_mobile_key]
+          %}
+          
+          <div class="ai-custom-section__product-grid-card-{{ ai_gen_id }}">
+            <div class="ai-custom-section__product-grid-image-{{ ai_gen_id }}">
+              {% if product_video %}
+                <video 
+                  class="ai-custom-section__video-{{ ai_gen_id }}"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source src="{{ product_video }}" type="video/mp4">
+                </video>
+              {% elsif product.featured_image %}
+                <picture>
+                  {% if product_image_mobile %}
+                    <source media="(max-width: 749px)" srcset="{{ product_image_mobile | image_url: width: 400 }}">
+                  {% endif %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 600 }}"
+                    alt="{{ product.featured_image.alt | escape }}"
+                    class="ai-custom-section__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="{{ product.featured_image.width }}"
+                    height="{{ product.featured_image.height }}"
+                  >
+                </picture>
+              {% else %}
+                <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+                  {{ 'product-apparel-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if product %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">
+                {{ product.title }}
+              </h3>
+              
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">
+                {{ product.price | money }}
+                {% if product.compare_at_price > product.price %}
+                  <span class="ai-custom-section__compare-price-{{ ai_gen_id }}">
+                    {{ product.compare_at_price | money }}
+                  </span>
+                {% endif %}
+              </div>
+            {% else %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">Product {{ i }} title</h3>
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">PKR 0.00</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_two_products %}
+      <div class="ai-custom-section__two-products-{{ ai_gen_id }}">
+        {% for i in (4..5) %}
+          {% liquid
+            assign product_key = 'product_' | append: i
+            assign product_video_key = 'product_' | append: i | append: '_video'
+            assign product_image_mobile_key = 'product_' | append: i | append: '_image_mobile'
+            assign product = block.settings[product_key]
+            assign product_video = block.settings[product_video_key]
+            assign product_image_mobile = block.settings[product_image_mobile_key]
+          %}
+          
+          <div class="ai-custom-section__two-product-card-{{ ai_gen_id }}">
+            <div class="ai-custom-section__two-product-image-{{ ai_gen_id }}">
+              {% if product_video %}
+                <video 
+                  class="ai-custom-section__video-{{ ai_gen_id }}"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source src="{{ product_video }}" type="video/mp4">
+                </video>
+              {% elsif product.featured_image %}
+                <picture>
+                  {% if product_image_mobile %}
+                    <source media="(max-width: 749px)" srcset="{{ product_image_mobile | image_url: width: 600 }}">
+                  {% endif %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 800 }}"
+                    alt="{{ product.featured_image.alt | escape }}"
+                    class="ai-custom-section__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="{{ product.featured_image.width }}"
+                    height="{{ product.featured_image.height }}"
+                  >
+                </picture>
+              {% else %}
+                <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+                  {{ 'product-apparel-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if product %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">
+                {{ product.title }}
+              </h3>
+              
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">
+                {{ product.price | money }}
+                {% if product.compare_at_price > product.price %}
+                  <span class="ai-custom-section__compare-price-{{ ai_gen_id }}">
+                    {{ product.compare_at_price | money }}
+                  </span>
+                {% endif %}
+              </div>
+            {% else %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">Product {{ i }} title</h3>
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">PKR 0.00</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_bottom_banner %}
+      <div class="ai-custom-section__bottom-banner-{{ ai_gen_id }}">
+        {% if block.settings.bottom_banner_video %}
+          <video 
+            class="ai-custom-section__video-{{ ai_gen_id }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="{{ block.settings.bottom_banner_video }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.bottom_banner_image %}
+          <picture>
+            {% if block.settings.bottom_banner_image_mobile %}
+              <source media="(max-width: 749px)" srcset="{{ block.settings.bottom_banner_image_mobile | image_url: width: 800 }}">
+            {% endif %}
+            <img
+              src="{{ block.settings.bottom_banner_image | image_url: width: 2000 }}"
+              alt="{{ block.settings.bottom_banner_image.alt | escape }}"
+              class="ai-custom-section__image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.bottom_banner_image.width }}"
+              height="{{ block.settings.bottom_banner_image.height }}"
+            >
+          </picture>
+        {% else %}
+          <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_four_products %}
+      <div class="ai-custom-section__four-products-{{ ai_gen_id }}">
+        {% for i in (6..9) %}
+          {% liquid
+            assign product_key = 'product_' | append: i
+            assign product_video_key = 'product_' | append: i | append: '_video'
+            assign product_image_mobile_key = 'product_' | append: i | append: '_image_mobile'
+            assign product = block.settings[product_key]
+            assign product_video = block.settings[product_video_key]
+            assign product_image_mobile = block.settings[product_image_mobile_key]
+          %}
+          
+          <div class="ai-custom-section__four-product-card-{{ ai_gen_id }}">
+            <div class="ai-custom-section__four-product-image-{{ ai_gen_id }}">
+              {% if product_video %}
+                <video 
+                  class="ai-custom-section__video-{{ ai_gen_id }}"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source src="{{ product_video }}" type="video/mp4">
+                </video>
+              {% elsif product.featured_image %}
+                <picture>
+                  {% if product_image_mobile %}
+                    <source media="(max-width: 749px)" srcset="{{ product_image_mobile | image_url: width: 400 }}">
+                  {% endif %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 500 }}"
+                    alt="{{ product.featured_image.alt | escape }}"
+                    class="ai-custom-section__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="{{ product.featured_image.width }}"
+                    height="{{ product.featured_image.height }}"
+                  >
+                </picture>
+              {% else %}
+                <div class="ai-custom-section__placeholder-{{ ai_gen_id }}">
+                  {{ 'product-apparel-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if product %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">
+                {{ product.title }}
+              </h3>
+              
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">
+                {{ product.price | money }}
+                {% if product.compare_at_price > product.price %}
+                  <span class="ai-custom-section__compare-price-{{ ai_gen_id }}">
+                    {{ product.compare_at_price | money }}
+                  </span>
+                {% endif %}
+              </div>
+            {% else %}
+              <h3 class="ai-custom-section__product-title-{{ ai_gen_id }}">Product {{ i }} title</h3>
+              <div class="ai-custom-section__product-price-{{ ai_gen_id }}">PKR 0.00</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Multi-section layout",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section visibility"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_images",
+      "label": "Show top images",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_banner",
+      "label": "Show banner",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_two_column",
+      "label": "Show two column section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_three_products",
+      "label": "Show three products",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_two_products",
+      "label": "Show two products section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_banner",
+      "label": "Show bottom banner",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_four_products",
+      "label": "Show four products",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Text styling"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 20,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_font_size",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile heading font size",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "label": "Heading font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "800",
+          "label": "Extra bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Heading line height",
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "min": -20,
+      "max": 50,
+      "step": 1,
+      "label": "Heading letter spacing",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "Heading uppercase",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_margin",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading bottom margin",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "body_font_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Body font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_body_font_size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile body font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "body_line_height",
+      "min": 1,
+      "max": 2.5,
+      "step": 0.1,
+      "label": "Body line height",
+      "default": 1.6
+    },
+    {
+      "type": "range",
+      "id": "body_letter_spacing",
+      "min": -10,
+      "max": 30,
+      "step": 1,
+      "label": "Body letter spacing",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Paragraph spacing",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_content_gap",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Text content gap",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "product_title_scale",
+      "min": 80,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Product title size",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "product_price_scale",
+      "min": 80,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Product price size",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Top images"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image_1",
+      "label": "First image"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image_1_mobile",
+      "label": "First image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "top_image_1_video",
+      "label": "First image video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image_2",
+      "label": "Second image"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image_2_mobile",
+      "label": "Second image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "top_image_2_video",
+      "label": "Second image video URL"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 400,
+      "max": 1200,
+      "step": 25,
+      "unit": "px",
+      "label": "Image height (desktop)",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_height",
+      "min": 300,
+      "max": 900,
+      "step": 25,
+      "unit": "px",
+      "label": "Image height (mobile)",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 4,
+      "max": 24,
+      "step": 4,
+      "unit": "px",
+      "label": "Space between images",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner image"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image_mobile",
+      "label": "Banner image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "banner_video",
+      "label": "Banner video URL"
+    },
+    {
+      "type": "range",
+      "id": "banner_height",
+      "min": 300,
+      "max": 1000,
+      "step": 25,
+      "unit": "px",
+      "label": "Banner height (desktop)",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "mobile_banner_height",
+      "min": 250,
+      "max": 750,
+      "step": 25,
+      "unit": "px",
+      "label": "Banner height (mobile)",
+      "default": 400
+    },
+    {
+      "type": "header",
+      "content": "Two column section"
+    },
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Featured product"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_mobile",
+      "label": "Product image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_video",
+      "label": "Product video URL"
+    },
+    {
+      "type": "text",
+      "id": "text_heading",
+      "label": "Heading",
+      "default": "Your heading here"
+    },
+    {
+      "type": "richtext",
+      "id": "text_body",
+      "label": "Body text",
+      "default": "<p>Add your descriptive text content here. This section supports rich text formatting.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Reverse layout",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "product_image_height",
+      "min": 400,
+      "max": 1000,
+      "step": 25,
+      "unit": "px",
+      "label": "Product image height (desktop)",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "mobile_product_image_height",
+      "min": 300,
+      "max": 750,
+      "step": 25,
+      "unit": "px",
+      "label": "Product image height (mobile)",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "column_spacing",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Column spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Three products"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_1_image_mobile",
+      "label": "Product 1 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_1_video",
+      "label": "Product 1 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_2_image_mobile",
+      "label": "Product 2 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_2_video",
+      "label": "Product 2 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_3",
+      "label": "Product 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_3_image_mobile",
+      "label": "Product 3 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_3_video",
+      "label": "Product 3 video URL"
+    },
+    {
+      "type": "range",
+      "id": "product_grid_image_height",
+      "min": 400,
+      "max": 1000,
+      "step": 25,
+      "unit": "px",
+      "label": "Product grid image height (desktop)",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "mobile_product_grid_image_height",
+      "min": 300,
+      "max": 750,
+      "step": 25,
+      "unit": "px",
+      "label": "Product grid image height (mobile)",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "product_grid_spacing",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Product grid spacing",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Two products section"
+    },
+    {
+      "type": "product",
+      "id": "product_4",
+      "label": "Product 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_4_image_mobile",
+      "label": "Product 4 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_4_video",
+      "label": "Product 4 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_5",
+      "label": "Product 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_5_image_mobile",
+      "label": "Product 5 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_5_video",
+      "label": "Product 5 video URL"
+    },
+    {
+      "type": "header",
+      "content": "Bottom banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_banner_image",
+      "label": "Bottom banner image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_banner_image_mobile",
+      "label": "Bottom banner image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "bottom_banner_video",
+      "label": "Bottom banner video URL"
+    },
+    {
+      "type": "range",
+      "id": "bottom_banner_height",
+      "min": 300,
+      "max": 1000,
+      "step": 25,
+      "unit": "px",
+      "label": "Bottom banner height (desktop)",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "mobile_bottom_banner_height",
+      "min": 250,
+      "max": 750,
+      "step": 25,
+      "unit": "px",
+      "label": "Bottom banner height (mobile)",
+      "default": 400
+    },
+    {
+      "type": "header",
+      "content": "Four products section"
+    },
+    {
+      "type": "product",
+      "id": "product_6",
+      "label": "Product 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_6_image_mobile",
+      "label": "Product 6 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_6_video",
+      "label": "Product 6 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_7",
+      "label": "Product 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_7_image_mobile",
+      "label": "Product 7 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_7_video",
+      "label": "Product 7 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_8",
+      "label": "Product 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_8_image_mobile",
+      "label": "Product 8 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_8_video",
+      "label": "Product 8 video URL"
+    },
+    {
+      "type": "product",
+      "id": "product_9",
+      "label": "Product 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_9_image_mobile",
+      "label": "Product 9 image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "product_9_video",
+      "label": "Product 9 video URL"
+    },
+    {
+      "type": "range",
+      "id": "four_product_image_height",
+      "min": 400,
+      "max": 1000,
+      "step": 25,
+      "unit": "px",
+      "label": "Four products image height (desktop)",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "mobile_four_product_image_height",
+      "min": 300,
+      "max": 750,
+      "step": 25,
+      "unit": "px",
+      "label": "Four products image height (mobile)",
+      "default": 450
+    },
+    {
+      "type": "range",
+      "id": "four_product_spacing",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Four products spacing",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "vertical_spacing",
+      "min": 16,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "label": "Vertical spacing between sections",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-section layout"
+    }
+  ]
+}
+{% endschema %}

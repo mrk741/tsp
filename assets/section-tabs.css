@@ -1,0 +1,13 @@
+.section-tabs .section-heading + .component-tabs,
+.section-tabs .subheading-font + .component-tabs,
+.section-tabs .richtext + .page__content {
+    margin-top: var(--block-padding-s);
+}
+.section-tabs__content-wrapper {
+    position: relative;
+}
+
+.center .component-tabs__wrapper {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}

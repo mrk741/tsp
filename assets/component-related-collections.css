@@ -1,0 +1,88 @@
+.related-collections__heading + .related-collections__container {
+    margin-top: var(--block-padding-xs);
+}
+
+.related-collections__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.section-related-collections .related-collections__item {
+    justify-content: center;
+}
+
+.related-collections--block .related-collections__item {
+    padding: var(--block-padding-xs) 0;
+    border-block-start: var(--line-thickness) solid rgb(var(--lines-color));
+    width: 100%;
+}
+
+.related-collections--block .related-collections__item:last-child {
+    border-block-end: var(--line-thickness) solid rgb(var(--lines-color));
+}
+
+.related-collections__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: opacity var(--animation-duration) var(--transition-timing-function);
+    width: 100%;
+}
+
+.related-collections__route--wrapper {
+    justify-content: space-between;
+}
+
+.related-collections__route--wrapper,
+.related-collections__link {
+    align-items: center;
+    gap: 8px;
+}
+
+.related-collections__image-icon,
+.related-collections__image-alternative {
+    display: flex;
+    align-items: center;
+}
+
+.related-collections__link .related-collections__icon {
+    height: fit-content;
+    display: inline-flex;
+}
+
+.related-collections__image-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.related-collections__image-alternative {
+    background-color: rgba(var(--layout-text-color), 0.1);
+    justify-content: center;
+    width: 100%;
+}
+
+.related-collections__image {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    height: 48px;
+    overflow: clip;
+    border-radius: var(--images-and-sections-radius);
+    -webkit-border-radius: var(--images-and-sections-radius);
+}
+
+@media (hover: hover) {
+    .related-collections__item:hover .related-collections__content {
+        opacity: var(--hover-opacity);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-related-collections .section-header {
+        text-align: start;
+    }
+
+    .section-related-collections .related-collections__item {
+        justify-content: flex-start;
+    }
+}

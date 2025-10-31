@@ -1,0 +1,30 @@
+.logo-slider__button {
+    margin-top: var(--template-header-padding);
+}
+
+.logo-slider__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo-slider__card .placeholder-svg,
+.logo-slider__image {
+    height: auto;
+}
+
+a.logo-slider__card {
+    transition: opacity calc(var(--animation-duration) / 2) var(--transition-timing-function);
+}
+
+.logo-slider a:focus {
+    outline-offset: -2px;
+}
+
+@media (hover: hover) {
+    a.logo-slider__card:hover {
+        opacity: var(--hover-opacity);
+        transition: opacity var(--animation-duration) var(--transition-timing-function);
+    }
+}

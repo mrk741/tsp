@@ -1,0 +1,99 @@
+promo-code {
+    display: flex;
+    width: 100%;
+}
+
+.center promo-code {
+    justify-content: center;
+}
+
+.promo-code {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    border-radius: var(--field-radius);
+    -webkit-border-radius: var(--field-radius);
+    overflow: clip;
+    max-width: 600px;
+}
+
+.promo-code > * {
+    border-radius: unset;
+    -webkit-border-radius: unset;
+}
+
+.promo-code__field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    padding: 12px 16px;
+    border: var(--border-thickness) dashed rgb(var(--layout-text-color));
+    overflow: clip;
+    border-inline-end: none;
+    border-start-start-radius: var(--field-radius);
+    border-end-start-radius: var(--field-radius);
+    width: 100%;
+}
+
+.promo-code__field span {
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    user-select: text !important;
+}
+
+.promo-code .copy-success, 
+.promo-code .copy-label {
+    display: block;
+    word-break: keep-all;
+}
+
+.promo-code .copy-button {
+    width: max-content;
+    padding: 12px 32px;
+    min-height: 64px;
+    transition: opacity var(--animation-duration) var(--transition-timing-function);
+    background-color: rgb(var(--layout-text-color));
+    color: rgb(var(--layout-bg-color));
+}
+
+@media (hover: hover) {
+    .promo-code .copy-button:hover {
+        opacity: 0.7;
+    }
+}
+
+.promo-code .copy-button .hide {
+    height: 0;
+    opacity: 0;
+}
+
+.promo-code .copy-button .show {
+    height: auto;
+    opacity: 1;
+}
+
+.promo-code .copy-button::before {
+    content: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .promo-code {
+        flex-direction: column;
+    }
+    .promo-code .copy-button,
+    .promo-code .promo-code__field {
+        width: 100%;
+        min-height: 44px;
+    }
+    .promo-code .promo-code__field {
+        border-block-end: none;
+        border-inline-end: var(--border-thickness) dashed rgb(var(--layout-text-color));
+        border-end-start-radius: 0px;
+        border-end-end-radius: 0px;
+        border-start-end-radius: var(--field-radius);
+    }
+}

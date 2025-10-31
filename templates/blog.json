@@ -1,0 +1,80 @@
+ {
+  "sections": {
+    "main-blog": {
+      "type": "main-blog",
+      "blocks": {
+        "8374add7-6c69-4828-ac1e-80ea9f9f4793": {
+          "type": "title",
+          "settings": {
+            "title_style": "secondary-heading",
+            "use_accent_color": false
+          }
+        },
+        "63e76be9-e371-410c-9ce9-4c6ae01d30db": {
+          "type": "info",
+          "settings": {
+            "show_date": true,
+            "show_author": false,
+            "show_number_of_comments": false,
+            "text_style": "caption-font"
+          }
+        },
+        "740e43ef-f9ab-4e7b-bade-9564a14fb0b7": {
+          "type": "excerpt",
+          "settings": {
+            "excerpt_line_limit": 2,
+            "text_style": "body-font"
+          }
+        },
+        "9c2400d5-f3ce-4279-b4e6-69252af42be8": {
+          "type": "read_more",
+          "settings": {
+            "button_label": "Keep reading",
+            "button_icon": "",
+            "swap_button_icon": false,
+            "target_blank": false,
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "8374add7-6c69-4828-ac1e-80ea9f9f4793",
+        "63e76be9-e371-410c-9ce9-4c6ae01d30db",
+        "740e43ef-f9ab-4e7b-bade-9564a14fb0b7",
+        "9c2400d5-f3ce-4279-b4e6-69252af42be8"
+      ],
+      "settings": {
+        "hide_heading": false,
+        "show_number_of_posts": false,
+        "enable_filtering_by_tags": true,
+        "center_text": false,
+        "posts_per_page": 12,
+        "desktop_columns": "3",
+        "mobile_columns": "1",
+        "show_featured_image": true,
+        "media_ratio": "4/3",
+        "focal_point": "center center",
+        "show_post_border": false,
+        "pagination": "paginated",
+        "pagination_button_label": "Load more",
+        "pagination_button_icon": "",
+        "swap_pagination_button_icon": false,
+        "pagination_button_style": "solid",
+        "use_main_button_pagination": false,
+        "full_width": true,
+        "grid_style": "page",
+        "disable_max_width": false,
+        "disable_grid_gaps": false,
+        "show_bottom_line": false,
+        "color_scheme": "background-4",
+        "post_color_scheme": "",
+        "section_framing": "disable",
+        "top_spacing": 0.5,
+        "bottom_spacing": 1
+      }
+    }
+  },
+  "order": [
+    "main-blog"
+  ]
+}
