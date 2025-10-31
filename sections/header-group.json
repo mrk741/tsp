@@ -16,6 +16,7 @@
       "blocks": {
         "text_dJgrDE": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "desktop_text": "<p>Announce something Announce something</p>",
             "mobile_text": "<p>Announce</p>",
@@ -29,7 +30,7 @@
           "type": "countdown_timer",
           "settings": {
             "countdown_enable": true,
-            "countdown_end_date": "",
+            "countdown_end_date": "2025-11-15",
             "countdown_end_time": "",
             "countdown_expiration_action": "show_zeros",
             "countdown_enable_animation": true,
