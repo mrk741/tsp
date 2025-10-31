@@ -388,7 +388,8 @@
         <div class="card-product__content flex--column body-font {% if settings.center_product_card_content and card_content_style == 'regular' %} center{% endif %}{% if settings.center_small_product_card_content and card_content_style == 'small' %} center{% endif %}">
             {% if price_position != 'with_title' %}
                 <div class="card__price {% if accent_price %}price--bold{% endif %} color-sale-price--{{ compare_at_price_color }} {% if use_accent_color_for_price %}color-price--accent{% endif %} {% if use_sale_color_for_new_price %}color-price--sale{% endif %} card__price--{{ price_position }} {% if card_content_style == 'regular' %}{{ settings.product_price_style }}{% else %}{{ settings.small_product_price_style }}{% endif %}{% if uppercase_product_price %} uppercase{% endif %}{% if subheading_heading_font_price %} subheading-heading-font{% endif %}">
-                    {% render 'price', product: card_product, accent_price: accent_price, show_badges: true, use_accent_color_for_price: use_accent_color_for_price, compare_at_price_color: compare_at_price_color, parent_product_card: true %}
+                    <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
+{% render 'price', product: card_product, accent_price: accent_price, show_badges: true, use_accent_color_for_price: use_accent_color_for_price, compare_at_price_color: compare_at_price_color, parent_product_card: true %}
                 </div>
             {% endif %}
             <div class="card__info">
