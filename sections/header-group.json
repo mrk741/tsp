@@ -65,6 +65,24 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "logo_btm7d7": {
+          "type": "logo",
+          "settings": {
+            "logo_type": "image",
+            "image_logo": "shopify://shop_images/THRIFT_SHOP_4.png",
+            "desktop_logo_width": 220,
+            "mobile_logo_width": 120,
+            "text_logo": "",
+            "logo_font": "prompt_n5",
+            "desktop_logo_font_size": 20,
+            "mobile_logo_font_size": 12
+          }
+        }
+      },
+      "block_order": [
+        "logo_btm7d7"
+      ],
       "custom_css": [
         ".header {box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);}",
         ".header--on_scroll-stick {box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); transition: box-shadow 0.3s ease;}"
