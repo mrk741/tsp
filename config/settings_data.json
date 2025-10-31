@@ -169,7 +169,7 @@
     "show_lines_popovers": false,
     "enable_quick_search": true,
     "quick_search_style": "drawer",
-    "quick_search_width": "wide",
+    "quick_search_width": "regular",
     "search_grid_style": "secondary",
     "search_disable_max_width": true,
     "search_results_desktop_columns": "4",
