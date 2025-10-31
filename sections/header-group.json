@@ -13,6 +13,7 @@
   "sections": {
     "announcement_bar_zGzxYa": {
       "type": "announcement-bar",
+      "name": "Announcement bar",
       "settings": {
         "announcement_bar": "show",
         "menu": "",
