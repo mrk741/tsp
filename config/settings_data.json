@@ -69,7 +69,7 @@
     "second_grid_row_gap": 4,
     "full_width_alt_grid": false,
     "alt_grid_width": 1200,
-    "alt_grid_column_gap": 24,
+    "alt_grid_column_gap": 15,
     "alt_grid_row_gap": 24,
     "border_thickness": "1px",
     "line_thickness": 1,
