@@ -14,6 +14,20 @@
     "footer": {
       "type": "Footer",
       "blocks": {
+        "context_image_qexqak": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/THRIFT_SHOP_3_420x_27e76660-dc08-4bd2-8b6d-73bac6508571.webp",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
         "menu_njk8Qe": {
           "type": "menu",
           "settings": {
@@ -48,6 +62,7 @@
         }
       },
       "block_order": [
+        "context_image_qexqak",
         "menu_njk8Qe",
         "menu_r8YiHw"
       ],
