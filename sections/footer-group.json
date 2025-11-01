@@ -119,10 +119,10 @@
           "type": "block_image",
           "settings": {
             "heading": "PAYMENT METHODS",
-            "desktop_image": "shopify://shop_images/online-payment.avif",
+            "desktop_image": "shopify://shop_images/payments-methods.png",
             "desktop_media_ratio": "auto",
             "block_image_radius": "default",
-            "mobile_image": "shopify://shop_images/online-payment.avif",
+            "mobile_image": "shopify://shop_images/payments-methods.png",
             "mobile_media_ratio": "auto",
             "block_image_link": "",
             "target_blank": false,
