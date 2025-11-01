@@ -63,12 +63,12 @@
         "newsletter_4dAj7z": {
           "type": "newsletter",
           "settings": {
-            "label": "Newsletter",
+            "label": "JOIN OUR NEWSLETTER TO GET UPDATE",
             "text": "",
             "text_style": "body-font",
-            "placeholder": "Enter your email address",
+            "placeholder": "thriftshopuk3@gmail.com",
             "caption": "<p>By signing up you agree to our <a href=\"/policies/privacy-policy\">Terms & Conditions</a>. You can unsubscribe at anytime you wish.</p>",
-            "enable_checkbox": false,
+            "enable_checkbox": true,
             "make_required": true,
             "checkbox_label": "<p>I have read and agreed to the <a href=\"/policies/privacy-policy\">Terms and Conditions</a>.</p>",
             "checkbox_text_style": "body-font",
@@ -115,12 +115,16 @@
             "desktop_padding": 0
           }
         },
-        "payment_methods_q4HFxY": {
-          "type": "payment_methods",
+        "block_image_FJPy8Q": {
+          "type": "block_image",
           "settings": {
             "heading": "",
+            "desktop_media_ratio": "auto",
+            "block_image_radius": "default",
+            "mobile_media_ratio": "auto",
+            "block_image_link": "",
+            "target_blank": false,
             "center_text": false,
-            "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "desktop_padding": 0
           }
@@ -134,7 +138,7 @@
         "text_bPgVLX",
         "text_PWDYUL",
         "social_media_9T6mgU",
-        "payment_methods_q4HFxY"
+        "block_image_FJPy8Q"
       ],
       "settings": {
         "grid_columns": "4",
