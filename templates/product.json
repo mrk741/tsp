@@ -663,7 +663,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.name",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "{% render 'ask-ai-ots' %}",
         "text_style": "body-font",
         "grid_style": "page",
         "disable_max_width": false,
