@@ -14,17 +14,6 @@
     "announcement_bar_zGzxYa": {
       "type": "announcement-bar",
       "blocks": {
-        "text_dJgrDE": {
-          "type": "text",
-          "settings": {
-            "desktop_text": "<p>Free Delivery Above 3000/-</p>",
-            "mobile_text": "<p>Free Delivery Above 3000/-</p>",
-            "icon": "",
-            "color": "#000000",
-            "mobile_color": "#000000",
-            "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
-          }
-        },
         "countdown_timer_yBiixe": {
           "type": "countdown_timer",
           "settings": {
@@ -44,11 +33,34 @@
             "color": "#000000",
             "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
           }
+        },
+        "text_dJgrDE": {
+          "type": "text",
+          "settings": {
+            "desktop_text": "<p>Free Delivery Above 3000/-</p>",
+            "mobile_text": "<p>Free Delivery Above 3000/-</p>",
+            "icon": "",
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
+          }
+        },
+        "text_HmQhAq": {
+          "type": "text",
+          "settings": {
+            "desktop_text": "<p>Use Code \"First10\" For Extra 10% Off</p>",
+            "mobile_text": "<p>Announce</p>",
+            "icon": "",
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
+          }
         }
       },
       "block_order": [
+        "countdown_timer_yBiixe",
         "text_dJgrDE",
-        "countdown_timer_yBiixe"
+        "text_HmQhAq"
       ],
       "name": "Announcement bar",
       "settings": {
