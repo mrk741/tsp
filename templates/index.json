@@ -590,7 +590,7 @@
         "quick_buy": "enable",
         "price_position": "bottom",
         "options_position": "bottom",
-        "show_vendor": "image",
+        "show_vendor": "disable",
         "show_title": true,
         "max_product_name_characters": 100,
         "show_rating": false,
