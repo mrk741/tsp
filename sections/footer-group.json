@@ -119,8 +119,10 @@
           "type": "block_image",
           "settings": {
             "heading": "",
+            "desktop_image": "shopify://shop_images/online-payment.avif",
             "desktop_media_ratio": "auto",
             "block_image_radius": "default",
+            "mobile_image": "shopify://shop_images/online-payment.avif",
             "mobile_media_ratio": "auto",
             "block_image_link": "",
             "target_blank": false,
