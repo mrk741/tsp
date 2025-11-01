@@ -75,7 +75,7 @@
         "show_bottom_line": false,
         "center_text": true,
         "enable_autoplay": true,
-        "autoplay_speed": 10,
+        "autoplay_speed": 4,
         "media_ratio": "auto",
         "image_width": 20,
         "image_radius": "default",
