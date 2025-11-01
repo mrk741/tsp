@@ -66,7 +66,7 @@
       "settings": {
         "announcement_bar": "show",
         "menu": "",
-        "dropdown_icon": "disable",
+        "dropdown_icon": "chevron",
         "dropdown_event_type": "hover",
         "highlight_menu_item": "",
         "text_style": "body-font",
