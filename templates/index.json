@@ -324,7 +324,6 @@
         },
         "heading_QWMEQD": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Media heading",
             "heading_style": "page-title",
@@ -740,6 +739,7 @@
         "price_dnWBPp",
         "buy_buttons_JUwDpn"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.name",
       "settings": {
         "product": "",
