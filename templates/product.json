@@ -482,6 +482,15 @@
             "top_spacing": 1,
             "mobile_top_spacing": 1
           }
+        },
+        "custom_liquid_V7yBrk": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<head>\n<style>\n.accordion {\n  width: 100%;\n  text-align: left;\n  padding: 18px 20px;\n  font-size: 16px;\n  font-weight: 600;\n  cursor: pointer;\n  color: #333;\n  background: #fff;\n  border: none;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  box-shadow: 0 3px 8px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}\n\n.accordion:hover {\n  background: #f2c744;\n  color: #000;\n  transform: translateY(-2px);\n  box-shadow: 0 6px 14px rgba(0,0,0,0.15);\n}\n\n.active {\n  background: #f2c744;\n  color: #000;\n  box-shadow: 0 6px 14px rgba(0,0,0,0.15);\n}\n\n.panel {\n  padding: 0 18px 15px 18px;\n  display: none;\n  background-color: #fff;\n  border-left: 3px solid #f2c744;\n  border-radius: 0 0 10px 10px;\n  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);\n  overflow: hidden;\n}\n\n/* Plus and minus icons */\n.accordion:after {\n  content: '\\002B';\n  color: #666;\n  font-weight: bold;\n  float: right;\n  margin-left: 10px;\n  transition: transform 0.3s ease;\n}\n\n.active:after {\n  content: \"\\2212\";\n  transform: rotate(180deg);\n}\n</style>\n</head>\n\n\n\n<body>\n\n<h2>Condition Guide</h2>\n\n<button class=\"accordion\">Premium Plus</button>\n<div class=\"panel\">\n  <p>Brand-new items with original tags, or products from high-end and luxury brands.</p>\n</div>\n<button class=\"accordion\">Premium</button>\n<div class=\"panel\">\n  <p> Branded items in like-new condition, showing no signs of use.</p>\n</div>\n\n<button class=\"accordion\">Excellent</button>\n<div class=\"panel\">\n  <p> Products with little to no signs of wear, almost like new. If there are any minor stains or dirt, they are guaranteed to be washable or removable.\n\n\n</p>\n</div>\n\n\n  <button class=\"accordion\">Good</button>\n<div class=\"panel\">\n  <p> Products with visible signs of wear but still fully wearable. May include minor stains (not guaranteed removable),tiny hole, small damages (repairable), missing buttons, broken zips.</p>\n</div>\n\n<script>\nvar acc = document.getElementsByClassName(\"accordion\");\nvar i;\n\nfor (i = 0; i < acc.length; i++) {\n  acc[i].addEventListener(\"click\", function() {\n    this.classList.toggle(\"active\");\n    var panel = this.nextElementSibling;\n    if (panel.style.display === \"block\") {\n      panel.style.display = \"none\";\n      this.querySelector('after').innerHTML = '\\002B'; // change plus to minus\n    } else {\n      panel.style.display = \"block\";\n      this.querySelector('after').innerHTML = '\\2212'; // change minus to plus\n    }\n  });\n}\n\n\ndocument.querySelectorAll('.pr_short_des p').forEach(function(p) {\n    if (p.innerText.includes(\"Description\")) {\n        p.style.display = 'none';\n    }\n});\n\n\n</script>",
+            "text_style": "body-font",
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
         }
       },
       "block_order": [
@@ -502,7 +511,8 @@
         "icons_with_text_AKka6W",
         "complementary_products_MdArDW",
         "related_collections_JB3aVW",
-        "share_hwwaKa"
+        "share_hwwaKa",
+        "custom_liquid_V7yBrk"
       ],
       "name": "t:sections.main-product.name",
       "settings": {
