@@ -13,6 +13,44 @@
   "sections": {
     "footer": {
       "type": "Footer",
+      "blocks": {
+        "menu_njk8Qe": {
+          "type": "menu",
+          "settings": {
+            "heading": "{Shop}",
+            "menu": "main-menu",
+            "menu_orientation": "column",
+            "link_style": "body-font",
+            "uppercase": false,
+            "bolder_font": false,
+            "desktop_width": 100,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
+        "menu_r8YiHw": {
+          "type": "menu",
+          "settings": {
+            "heading": "{Information}",
+            "menu": "footer",
+            "menu_orientation": "column",
+            "link_style": "body-font",
+            "uppercase": false,
+            "bolder_font": false,
+            "desktop_width": 100,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        }
+      },
+      "block_order": [
+        "menu_njk8Qe",
+        "menu_r8YiHw"
+      ],
       "settings": {
         "grid_columns": "4",
         "two_columns_mobile": true,
