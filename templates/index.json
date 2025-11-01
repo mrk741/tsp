@@ -72,7 +72,7 @@
             "countdown_timer_style": "subheading-font",
             "countdown_make_timer_font_bolder": false,
             "countdown_text_color": "#000000",
-            "countdown_show_background": true,
+            "countdown_show_background": false,
             "countdown_background_color": "#e8e8e8",
             "countdown_background_gradient": "linear-gradient(180deg, rgba(235, 235, 235, 1), rgba(255, 255, 255, 1) 100%)",
             "countdown_corner_radius": 2,
