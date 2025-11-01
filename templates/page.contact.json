@@ -36,9 +36,9 @@
           "settings": {
             "subheading": "Contact",
             "subheading_style": "subheading-font",
-            "contacts_1": "hello@shopifystore.com",
+            "contacts_1": "help@thriftshop.pk",
             "contacts_1_type": "email",
-            "contacts_2": "123-456-7890",
+            "contacts_2": "0328-6940008",
             "contacts_2_type": "phone_number",
             "description": "Mon–Fri, 10AM–9PM",
             "text_style": "body-font"
@@ -46,6 +46,7 @@
         },
         "subheading_NHf67w": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Subheading",
             "subheading_style": "subheading-font",
@@ -54,6 +55,7 @@
         },
         "heading_XnWPj3": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Our store",
             "heading_style": "section-heading",
@@ -62,6 +64,7 @@
         },
         "text_grkbdp": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share your address and payment methods. Describe how to find your local store or how long it might take you to respond to an email. Attach a photo of the entrance.</p>",
             "text_style": "body-font"
