@@ -627,95 +627,13 @@
         "top_spacing": 1.3,
         "bottom_spacing": 1.4
       }
-    },
-    "featured_collections_qWNE8r": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_MLzPdf": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_T9Xfra": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_7zhEfH": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_AWE7r3": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_DBrwi4": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_bAwV79": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_MLzPdf",
-        "collection_T9Xfra",
-        "collection_7zhEfH",
-        "collection_AWE7r3",
-        "collection_DBrwi4",
-        "collection_bAwV79"
-      ],
-      "name": "t:sections.featured-collections.name",
-      "settings": {
-        "heading": "Featured colllections",
-        "heading_style": "section-heading",
-        "heading_tag": "h2",
-        "center_text": false,
-        "grid_type": "grid",
-        "desktop_columns": "4",
-        "mobile_columns": "1",
-        "on_mobile_show": 0,
-        "show_more_button_label": "Show more",
-        "show_more_button_icon": "",
-        "swap_show_more_button_icon": false,
-        "show_more_button_style": "outlined",
-        "desktop_item_width": 6,
-        "alignment_fewer_items": "left",
-        "mobile_item_min_width": 250,
-        "show_arrows": true,
-        "show_scrollbar": true,
-        "show_collection_card_border": false,
-        "overlay_opacity": 50,
-        "full_width": true,
-        "grid_style": "page",
-        "disable_max_width": false,
-        "disable_grid_gaps": false,
-        "show_bottom_line": false,
-        "color_scheme": "",
-        "collection_card_color_scheme": "",
-        "section_framing": "disable",
-        "top_spacing": 1,
-        "bottom_spacing": 1
-      }
     }
   },
   "order": [
     "collapsible_tabs_ekEtGz",
     "slideshow_Q7Gb4k",
-    "featured_product_TQCtY8",
-    "collection_tabs_mDpf3c",
     "featured_collection_with_media_BeEHyQ",
-    "featured_collections_qWNE8r"
+    "featured_product_TQCtY8",
+    "collection_tabs_mDpf3c"
   ]
 }
