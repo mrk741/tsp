@@ -207,6 +207,7 @@
         },
         "linked_products_iqyhDV": {
           "type": "linked_products",
+          "disabled": true,
           "settings": {
             "heading": "Colors",
             "uppercase": true,
@@ -239,13 +240,12 @@
         },
         "inventory_status_UKMnJh": {
           "type": "inventory_status",
-          "disabled": true,
           "settings": {
             "show_label": true,
             "show_transfer": false,
             "show_bar": true,
-            "base_quantity": "100",
-            "low_threshold": "20",
+            "base_quantity": "1",
+            "low_threshold": "1",
             "label_style": "body-font",
             "label_uppercase": false,
             "label_bolder_font": false,
