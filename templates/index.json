@@ -125,8 +125,8 @@
         "image_fAEk8H": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner.png",
-            "mobile_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner.png",
+            "desktop_image": "shopify://shop_images/Red_and_Blue_Simple_Thrift_Store_Facebook_Cover.png",
+            "mobile_image": "shopify://shop_images/Red_and_Blue_Simple_Thrift_Store_Facebook_Cover.png",
             "link": "",
             "target_blank": false,
             "icon": "",
@@ -207,7 +207,7 @@
       "name": "t:sections.slideshow.name",
       "settings": {
         "overlap": "disable",
-        "desktop_height_type": "adapt",
+        "desktop_height_type": "pixels",
         "desktop_pixels_height": 600,
         "mobile_height_type": "pixels",
         "mobile_pixels_height": 200,
