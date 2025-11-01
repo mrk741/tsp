@@ -74,6 +74,24 @@
             "desktop_padding": 0
           }
         },
+        "newsletter_4dAj7z": {
+          "type": "newsletter",
+          "settings": {
+            "label": "Newsletter",
+            "text": "",
+            "text_style": "body-font",
+            "placeholder": "Enter your email address",
+            "caption": "<p>By signing up you agree to our <a href='/policies/privacy-policy'>Terms & Conditions</a>. You can unsubscribe at anytime you wish.</p>",
+            "enable_checkbox": false,
+            "make_required": true,
+            "checkbox_label": "<p>I have read and agreed to the <a href='/policies/privacy-policy'>Terms and Conditions</a>.</p>",
+            "checkbox_text_style": "body-font",
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
         "text_PWDYUL": {
           "type": "text",
           "settings": {
@@ -114,6 +132,7 @@
         "context_image_qexqak",
         "menu_njk8Qe",
         "menu_r8YiHw",
+        "newsletter_4dAj7z",
         "text_PWDYUL",
         "social_media_9T6mgU",
         "payment_methods_q4HFxY"
