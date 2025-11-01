@@ -108,7 +108,7 @@
         "social_media_9T6mgU": {
           "type": "social_media",
           "settings": {
-            "subheading": "Follow us",
+            "subheading": "{Follow us}",
             "follow_on_shop": false,
             "center_text": false,
             "horizontal_alignment": "flex-start",
