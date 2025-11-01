@@ -121,7 +121,7 @@
         "header_layout": "logo_left_wide_search",
         "sticky_header": "always",
         "menu": "",
-        "parent_menu": true,
+        "parent_menu": false,
         "dropdown_icon": "chevron",
         "dropdown_event_type": "hover",
         "link_style": "caption-font",
