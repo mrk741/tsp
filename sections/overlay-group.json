@@ -98,11 +98,11 @@
         "secondary_menu_9LYj6b": {
           "type": "secondary_menu",
           "settings": {
-            "show_menu_title": true,
-            "menu_title_1": "Discover",
-            "menu_1": "footer",
+            "show_menu_title": false,
+            "menu_title_1": "",
+            "menu_1": "secondary-menu",
             "menu_title_2": "Discover",
-            "menu_2": "main-menu",
+            "menu_2": "",
             "link_style": "body-font",
             "uppercase": false,
             "bolder_font": false,
