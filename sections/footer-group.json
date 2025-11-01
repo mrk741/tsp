@@ -14,6 +14,20 @@
     "footer": {
       "type": "Footer",
       "blocks": {
+        "text_bPgVLX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "text": "<p>This is where you can share your brand story and vision with your customers. You can change the text in the theme editor.</p>",
+            "text_style": "body-font",
+            "desktop_width": 100,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
         "context_image_qexqak": {
           "type": "context_image",
           "settings": {
@@ -59,12 +73,50 @@
             "vertical_alignment": "flex-start",
             "desktop_padding": 0
           }
+        },
+        "text_PWDYUL": {
+          "type": "text",
+          "settings": {
+            "heading": "Helpline",
+            "text": "<p>This is where you can share your brand story and vision with your customers. You can change the text in the theme editor.</p>",
+            "text_style": "body-font",
+            "desktop_width": 100,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
+        "social_media_9T6mgU": {
+          "type": "social_media",
+          "settings": {
+            "subheading": "Follow us",
+            "follow_on_shop": false,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
+        "payment_methods_q4HFxY": {
+          "type": "payment_methods",
+          "settings": {
+            "heading": "",
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
         }
       },
       "block_order": [
+        "text_bPgVLX",
         "context_image_qexqak",
         "menu_njk8Qe",
-        "menu_r8YiHw"
+        "menu_r8YiHw",
+        "text_PWDYUL",
+        "social_media_9T6mgU",
+        "payment_methods_q4HFxY"
       ],
       "settings": {
         "grid_columns": "4",
