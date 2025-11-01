@@ -86,7 +86,7 @@
     "vertical_offset": 2,
     "shadow_blur": 2,
     "main_vertical_padding": "12px",
-    "burger_icon": "classic",
+    "burger_icon": "two_stripes",
     "icon_size": "1",
     "show_label": true,
     "show_selected_option": true,
