@@ -1,1 +1,167 @@
-{"type":"custom.overlay","name":"Overlay","sections":{"cart_drawer_bxxHND":{"type":"cart-drawer","settings":{"show_order_weight":false,"show_taxes":true,"show_before_discounts":true,"show_saved":false,"show_cart_button":true,"show_checkout_button":true,"show_price_in_button":true,"use_main_button":true,"headings_style":"secondary-heading","cart_total_style":"secondary-heading","enable_order_note":true,"show_collapsible":true,"order_heading":"Order note","order_heading_style":"subheading-font","order_label":"Add a note to your order","order_placeholder":"Write your comment for seller here","enable_shipping":true,"shipping_heading":"Estimate shipping","shipping_heading_style":"subheading-font","shipping_country":"Pakistan","enable_cart_recommendations":true,"cart_recommendations_content":"both","heading":"You may also like","recently_viewed_heading":"Recently viewed","recommendations_heading_style":"secondary-heading","cart_recommendations_desktop_style":"side-panel","grid_style":"secondary","color_scheme":"","product_card_color_scheme":"background-1","show_product_card_border":false,"item_width":180,"show_arrows":true,"show_scrollbar":true,"hover_behavior":"image_zoom","show_bullets":true,"desktop_options":"disable","mobile_options":"disable","quick_buy":"enable","price_position":"bottom","show_vendor":"image","show_title":true,"max_product_name_characters":100,"show_rating":true,"show_short_description":false,"show_pickup_availability":false,"enable_offer":true,"offer_position":"above_items","icon":"","color":"#000000","mobile_color":"#000000","icon_width":24,"offer_heading":"Limited Time Offer","offer_heading_style":"secondary-heading","offer_text":"<p>Today only! Use code '<strong>OTS10'<\/strong> at checkout to save extra <strong>10%<\/strong> on your entire purchase. Don’t miss out!<\/p>","offer_text_style":"body-font","background_color":"#fffb00","text_color":"rgba(0,0,0,0)"}},"menu-drawer":{"type":"menu-drawer","custom_css":[],"settings":{"menu_drawer_position":"right","heading":"Menu","menu":"main-menu","parent_menu":false,"parent_link_style":"caption-font","parent_uppercase":true,"parent_bolder_font":true,"link_style":"secondary-heading","uppercase":false,"bolder_font":false,"show_lines_menu":false,"title_style":"section-heading","show_collection_image":false,"media_ratio":"1\/1","focal_point":"center center","image_radius":"default","highlight_menu_item":"","block_headings_style":"subheading-font","pinned_block":"localization","show_collection_banner":false,"banner_media_ratio":"1\/1","banner_focal_point":"center center","overlay_opacity":15,"banner_color_scheme":"background-2"}}},"order":["cart_drawer_bxxHND","menu-drawer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.overlay",
+  "name": "Overlay",
+  "sections": {
+    "cart_drawer_bxxHND": {
+      "type": "cart-drawer",
+      "settings": {
+        "show_order_weight": false,
+        "show_taxes": true,
+        "show_before_discounts": true,
+        "show_saved": false,
+        "show_cart_button": true,
+        "show_checkout_button": true,
+        "show_price_in_button": true,
+        "use_main_button": true,
+        "headings_style": "secondary-heading",
+        "cart_total_style": "secondary-heading",
+        "enable_order_note": true,
+        "show_collapsible": true,
+        "order_heading": "Order note",
+        "order_heading_style": "subheading-font",
+        "order_label": "Add a note to your order",
+        "order_placeholder": "Write your comment for seller here",
+        "enable_shipping": true,
+        "shipping_heading": "Estimate shipping",
+        "shipping_heading_style": "subheading-font",
+        "shipping_country": "Pakistan",
+        "enable_cart_recommendations": true,
+        "cart_recommendations_content": "both",
+        "heading": "You may also like",
+        "recently_viewed_heading": "Recently viewed",
+        "recommendations_heading_style": "secondary-heading",
+        "cart_recommendations_desktop_style": "side-panel",
+        "grid_style": "secondary",
+        "color_scheme": "",
+        "product_card_color_scheme": "background-1",
+        "show_product_card_border": false,
+        "item_width": 180,
+        "show_arrows": true,
+        "show_scrollbar": true,
+        "hover_behavior": "image_zoom",
+        "show_bullets": true,
+        "desktop_options": "disable",
+        "mobile_options": "disable",
+        "quick_buy": "enable",
+        "price_position": "bottom",
+        "show_vendor": "image",
+        "show_title": true,
+        "max_product_name_characters": 100,
+        "show_rating": true,
+        "show_short_description": false,
+        "show_pickup_availability": false,
+        "enable_offer": true,
+        "offer_position": "above_items",
+        "icon": "",
+        "color": "#000000",
+        "mobile_color": "#000000",
+        "icon_width": 24,
+        "offer_heading": "Limited Time Offer",
+        "offer_heading_style": "secondary-heading",
+        "offer_text": "<p>Today only! Use code '<strong>OTS10'</strong> at checkout to save extra <strong>10%</strong> on your entire purchase. Don’t miss out!</p>",
+        "offer_text_style": "body-font",
+        "background_color": "#fffb00",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "menu-drawer": {
+      "type": "menu-drawer",
+      "blocks": {
+        "nested_menu_ytmx8z": {
+          "type": "nested_menu",
+          "settings": {
+            "menu_dropdown_link": "",
+            "nested_highlight_menu_item": "",
+            "item_style": "thumbnail",
+            "media_ratio": "1/1",
+            "image_radius": "default",
+            "heading_1": "",
+            "link_1": "",
+            "heading_2": "",
+            "link_2": "",
+            "heading_3": "",
+            "link_3": "",
+            "heading_4": "",
+            "link_4": "",
+            "heading_5": "",
+            "link_5": "",
+            "heading_6": "",
+            "link_6": "",
+            "heading_7": "",
+            "link_7": "",
+            "heading_8": "",
+            "link_8": "",
+            "heading_9": "",
+            "link_9": "",
+            "heading_10": "",
+            "link_10": ""
+          }
+        },
+        "line_YDnLLK": {
+          "type": "line",
+          "disabled": true,
+          "settings": {
+            "top_spacing": 1,
+            "bottom_spacing": 1
+          }
+        },
+        "social_media_4KgzTd": {
+          "type": "social_media",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "follow_on_shop": false,
+            "show_bottom_line": true,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
+        }
+      },
+      "block_order": [
+        "nested_menu_ytmx8z",
+        "line_YDnLLK",
+        "social_media_4KgzTd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "menu_drawer_position": "left",
+        "heading": "",
+        "menu": "main-menu",
+        "parent_menu": false,
+        "parent_link_style": "caption-font",
+        "parent_uppercase": true,
+        "parent_bolder_font": true,
+        "link_style": "secondary-heading",
+        "uppercase": false,
+        "bolder_font": false,
+        "show_lines_menu": true,
+        "title_style": "section-heading",
+        "show_collection_image": true,
+        "media_ratio": "1/1",
+        "focal_point": "center center",
+        "image_radius": "default",
+        "highlight_menu_item": "Abount",
+        "block_headings_style": "subheading-font",
+        "pinned_block": "localization",
+        "show_collection_banner": false,
+        "banner_media_ratio": "1/1",
+        "banner_focal_point": "center center",
+        "overlay_opacity": 15,
+        "banner_color_scheme": "background-2"
+      }
+    }
+  },
+  "order": [
+    "cart_drawer_bxxHND",
+    "menu-drawer"
+  ]
+}

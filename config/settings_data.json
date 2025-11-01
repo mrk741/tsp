@@ -168,6 +168,7 @@
     "modal_shadow_blur": 15,
     "modal_border": false,
     "show_lines_popovers": false,
+    "enable_search_field": true,
     "enable_quick_search": true,
     "quick_search_style": "drawer",
     "quick_search_width": "regular",
