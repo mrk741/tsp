@@ -559,7 +559,7 @@
         "settings": {
           "layout_background_color": "#fef764",
           "layout_background_gradient": "",
-          "layout_text_color": "#ffffff",
+          "layout_text_color": "#000000",
           "layout_link_color": "#000000",
           "layout_accent_color": "#000000",
           "layout_highlighted_background": "#000000",
