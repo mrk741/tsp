@@ -588,7 +588,7 @@
         "mobile_options": "enable",
         "card_content_style": "regular",
         "quick_buy": "enable",
-        "price_position": "with_title",
+        "price_position": "bottom",
         "options_position": "bottom",
         "show_vendor": "image",
         "show_title": true,
