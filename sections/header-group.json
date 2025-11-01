@@ -129,7 +129,7 @@
         "bolder_font": true,
         "highlight_menu_item": "11 11 SALE",
         "bottom_menu": "main-menu",
-        "bottom_dropdown_icon": "disable",
+        "bottom_dropdown_icon": "chevron",
         "bottom_dropdown_event_type": "hover",
         "bottom_link_style": "body-font",
         "bottom_uppercase": false,
