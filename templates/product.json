@@ -151,6 +151,14 @@
     "main_product_4ixdke": {
       "type": "main-product",
       "blocks": {
+        "breadcrumbs_t87Uyk": {
+          "type": "breadcrumbs",
+          "settings": {
+            "breadcrumbs_center_content": false,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
+        },
         "vendor_DAXDbj": {
           "type": "vendor",
           "settings": {
@@ -459,6 +467,7 @@
         }
       },
       "block_order": [
+        "breadcrumbs_t87Uyk",
         "vendor_DAXDbj",
         "title_kt3Nfc",
         "price_wREBaJ",
@@ -504,7 +513,7 @@
         "show_thumbnails": "below_gallery",
         "sticky_thumbnails": true,
         "thumbnails_width": 120,
-        "thumbnails_gap": 10,
+        "thumbnails_gap": 4,
         "thumbnails_media_ratio": "1/1",
         "thumbnails_focal_point": "center center",
         "thumbnails_radius": "0px",
