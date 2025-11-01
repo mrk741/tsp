@@ -886,7 +886,7 @@
         "full_width": true,
         "grid_style": "page",
         "disable_max_width": false,
-        "disable_grid_gaps": false,
+        "disable_grid_gaps": true,
         "show_bottom_line": false,
         "color_scheme": "",
         "collection_card_color_scheme": "",
