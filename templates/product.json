@@ -197,8 +197,17 @@
             "mobile_top_spacing": 1
           }
         },
+        "description_zbaYQQ": {
+          "type": "description",
+          "settings": {
+            "text_style": "body-font",
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
+        },
         "linked_products_iqyhDV": {
           "type": "linked_products",
+          "disabled": true,
           "settings": {
             "heading": "",
             "uppercase": true,
@@ -231,6 +240,7 @@
         },
         "inventory_status_UKMnJh": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "show_label": true,
             "show_transfer": false,
@@ -472,6 +482,7 @@
         "vendor_DAXDbj",
         "title_kt3Nfc",
         "price_wREBaJ",
+        "description_zbaYQQ",
         "linked_products_iqyhDV",
         "variant_picker_AxxaeX",
         "inventory_status_UKMnJh",
