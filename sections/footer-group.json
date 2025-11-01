@@ -119,7 +119,7 @@
         "block_image_FJPy8Q": {
           "type": "block_image",
           "settings": {
-            "heading": "PAYMENT METHODS",
+            "heading": "{PAYMENT METHODS}",
             "desktop_image": "shopify://shop_images/payments-methods.png",
             "desktop_media_ratio": "auto",
             "block_image_radius": "default",
