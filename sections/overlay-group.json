@@ -84,17 +84,6 @@
             "bottom_spacing": 1
           }
         },
-        "social_media_4KgzTd": {
-          "type": "social_media",
-          "disabled": true,
-          "settings": {
-            "subheading": "",
-            "follow_on_shop": false,
-            "show_bottom_line": true,
-            "top_spacing": 1,
-            "mobile_top_spacing": 1
-          }
-        },
         "secondary_menu_9LYj6b": {
           "type": "secondary_menu",
           "settings": {
@@ -135,14 +124,24 @@
             "top_spacing": 1,
             "mobile_top_spacing": 1
           }
+        },
+        "social_media_4KgzTd": {
+          "type": "social_media",
+          "settings": {
+            "subheading": "",
+            "follow_on_shop": true,
+            "show_bottom_line": true,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
         }
       },
       "block_order": [
         "line_YDnLLK",
-        "social_media_4KgzTd",
         "secondary_menu_9LYj6b",
         "account_RWrwYE",
-        "context_image_nwDiq4"
+        "context_image_nwDiq4",
+        "social_media_4KgzTd"
       ],
       "custom_css": [],
       "settings": {
