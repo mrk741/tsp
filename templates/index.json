@@ -503,6 +503,7 @@
       "blocks": {
         "icon_N7dGhw": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon": "",
             "icon_size": 36,
@@ -515,6 +516,7 @@
         },
         "heading_QWMEQD": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Media heading",
             "heading_style": "page-title",
@@ -523,6 +525,7 @@
         },
         "text_JnY3h6": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
             "text_style": "body-font"
@@ -530,6 +533,7 @@
         },
         "button_iMUyFp": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Discover",
             "button_icon": "glyphs/signs/up-right",
@@ -550,8 +554,7 @@
       "name": "t:sections.featured-collection-with-media.name",
       "settings": {
         "collection": "long-cardigans",
-        "media": "show",
-        "image": "shopify://shop_images/Light_Brown_Simple_Monoline_Typography_Logo_1.png",
+        "media": "hide",
         "focal_point": "center center",
         "enable_mute": false,
         "enable_pause": false,
