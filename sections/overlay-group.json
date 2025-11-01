@@ -76,36 +76,6 @@
     "menu-drawer": {
       "type": "menu-drawer",
       "blocks": {
-        "nested_menu_ytmx8z": {
-          "type": "nested_menu",
-          "settings": {
-            "menu_dropdown_link": "",
-            "nested_highlight_menu_item": "",
-            "item_style": "thumbnail",
-            "media_ratio": "1/1",
-            "image_radius": "default",
-            "heading_1": "",
-            "link_1": "",
-            "heading_2": "",
-            "link_2": "",
-            "heading_3": "",
-            "link_3": "",
-            "heading_4": "",
-            "link_4": "",
-            "heading_5": "",
-            "link_5": "",
-            "heading_6": "",
-            "link_6": "",
-            "heading_7": "",
-            "link_7": "",
-            "heading_8": "",
-            "link_8": "",
-            "heading_9": "",
-            "link_9": "",
-            "heading_10": "",
-            "link_10": ""
-          }
-        },
         "line_YDnLLK": {
           "type": "line",
           "disabled": true,
@@ -124,12 +94,29 @@
             "top_spacing": 1,
             "mobile_top_spacing": 1
           }
+        },
+        "secondary_menu_9LYj6b": {
+          "type": "secondary_menu",
+          "settings": {
+            "show_menu_title": true,
+            "menu_title_1": "Discover",
+            "menu_1": "footer",
+            "menu_title_2": "Discover",
+            "menu_2": "main-menu",
+            "link_style": "body-font",
+            "uppercase": false,
+            "bolder_font": false,
+            "highlight_menu_item": "",
+            "show_bottom_line": true,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
         }
       },
       "block_order": [
-        "nested_menu_ytmx8z",
         "line_YDnLLK",
-        "social_media_4KgzTd"
+        "social_media_4KgzTd",
+        "secondary_menu_9LYj6b"
       ],
       "custom_css": [],
       "settings": {
