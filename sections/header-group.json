@@ -29,7 +29,7 @@
             "countdown_labels_color": "#000000",
             "desktop_text": "<p><strong>Sale Ends In</strong></p>",
             "mobile_text": "<p><strong>Sale Ends In</strong></p>",
-            "icon": "",
+            "icon": "glyphs/signs/lightening",
             "color": "#000000",
             "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
           }
@@ -39,7 +39,7 @@
           "settings": {
             "desktop_text": "<p>Free Delivery Above 3000/-</p>",
             "mobile_text": "<p>Free Delivery Above 3000/-</p>",
-            "icon": "",
+            "icon": "glyphs/signs/shop",
             "color": "#000000",
             "mobile_color": "#000000",
             "color_scheme": "scheme-5c4f50c3-637f-49d8-94f0-a258e73d6f93"
