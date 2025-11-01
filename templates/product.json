@@ -484,7 +484,7 @@
         "media_position": "left",
         "gallery_style": "gallery",
         "gallery_size": 6,
-        "grid_gap": 16,
+        "grid_gap": 0,
         "organize_images": false,
         "show_media_attached_to_variant": false,
         "desktop_media_ratio": "1/1",
