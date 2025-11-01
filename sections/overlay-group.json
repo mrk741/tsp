@@ -125,7 +125,8 @@
         "context_image_nwDiq4": {
           "type": "context_image",
           "settings": {
-            "context_image_width": 120,
+            "context_image": "shopify://shop_images/THRIFT_SHOP_3_f9e3589c-4e16-4ab8-bffb-120f75194321.png",
+            "context_image_width": 152,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
             "context_image_link": "",
