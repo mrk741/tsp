@@ -119,7 +119,7 @@
       "custom_css": [],
       "settings": {
         "header_layout": "logo_left_wide_search",
-        "sticky_header": "always",
+        "sticky_header": "disable",
         "menu": "",
         "parent_menu": true,
         "dropdown_icon": "chevron",
