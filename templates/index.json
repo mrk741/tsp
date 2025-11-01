@@ -306,6 +306,93 @@
         "bottom_spacing": 0
       }
     },
+    "featured_collections_JPMnHK": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_AHbtbc": {
+          "type": "collection",
+          "settings": {
+            "collection": "women-short-cardigans-sweater",
+            "custom_collection_image": "shopify://shop_images/v-neck-fluffy-knit-cardigan-sweater-khaki-one-size-908-ezgif.com-webp-to-jpg-converter.webp"
+          }
+        },
+        "collection_iNnFMx": {
+          "type": "collection",
+          "settings": {
+            "collection": "long-cardigans",
+            "custom_collection_image": "shopify://shop_images/ba1f24ebd4987b413c1f5012ded60f78-ezgif.com-jpg-to-webp-converter.webp"
+          }
+        },
+        "collection_8MVnRz": {
+          "type": "collection",
+          "settings": {
+            "collection": "women-knitted-tops",
+            "custom_collection_image": "shopify://shop_images/a46f47e9b61adbcc1c4007c0f0d45b3f-ezgif.com-jpg-to-webp-converter.webp"
+          }
+        },
+        "collection_VAHdU3": {
+          "type": "collection",
+          "settings": {
+            "collection": "girls-hoodies-zippers",
+            "custom_collection_image": "shopify://shop_images/5a010feb76ff44293f9baee1c73cc452-ezgif.com-jpg-to-webp-converter.webp"
+          }
+        },
+        "collection_QHEfgG": {
+          "type": "collection",
+          "settings": {
+            "collection": "winter-crop-tops",
+            "custom_collection_image": "shopify://shop_images/CHRONSTYLE-Women-Slim-Cropped-Knitted-Sweaters-Solid-Zip-Up-Long-Sleeve-Cardigan-Spring-Fall-Stand-Collar_419394e2-c05f-4d9c-802a-32cf20dd1061.webp"
+          }
+        },
+        "collection_4KmmP3": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-jackets",
+            "custom_collection_image": "shopify://shop_images/d49dee5f5c237ae544d60d02166bcec7-ezgif.com-jpg-to-webp-converter.webp"
+          }
+        }
+      },
+      "block_order": [
+        "collection_AHbtbc",
+        "collection_iNnFMx",
+        "collection_8MVnRz",
+        "collection_VAHdU3",
+        "collection_QHEfgG",
+        "collection_4KmmP3"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
+        "heading": "Featured colllections",
+        "heading_style": "section-heading",
+        "heading_tag": "h2",
+        "center_text": false,
+        "grid_type": "slider",
+        "desktop_columns": "3",
+        "mobile_columns": "1",
+        "on_mobile_show": 0,
+        "show_more_button_label": "Show more",
+        "show_more_button_icon": "",
+        "swap_show_more_button_icon": true,
+        "show_more_button_style": "outlined",
+        "desktop_item_width": 4,
+        "alignment_fewer_items": "left",
+        "mobile_item_min_width": 250,
+        "show_arrows": true,
+        "show_scrollbar": true,
+        "show_collection_card_border": false,
+        "overlay_opacity": 50,
+        "full_width": true,
+        "grid_style": "page",
+        "disable_max_width": false,
+        "disable_grid_gaps": true,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "collection_card_color_scheme": "",
+        "section_framing": "disable",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
     "featured_collection_with_media_BeEHyQ": {
       "type": "featured-collection-with-media",
       "blocks": {
@@ -434,93 +521,6 @@
         "sticky_offset": 122,
         "top_spacing": 1.3,
         "bottom_spacing": 1.4
-      }
-    },
-    "featured_collections_JPMnHK": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_AHbtbc": {
-          "type": "collection",
-          "settings": {
-            "collection": "women-short-cardigans-sweater",
-            "custom_collection_image": "shopify://shop_images/v-neck-fluffy-knit-cardigan-sweater-khaki-one-size-908-ezgif.com-webp-to-jpg-converter.webp"
-          }
-        },
-        "collection_iNnFMx": {
-          "type": "collection",
-          "settings": {
-            "collection": "long-cardigans",
-            "custom_collection_image": "shopify://shop_images/ba1f24ebd4987b413c1f5012ded60f78-ezgif.com-jpg-to-webp-converter.webp"
-          }
-        },
-        "collection_8MVnRz": {
-          "type": "collection",
-          "settings": {
-            "collection": "women-knitted-tops",
-            "custom_collection_image": "shopify://shop_images/a46f47e9b61adbcc1c4007c0f0d45b3f-ezgif.com-jpg-to-webp-converter.webp"
-          }
-        },
-        "collection_VAHdU3": {
-          "type": "collection",
-          "settings": {
-            "collection": "girls-hoodies-zippers",
-            "custom_collection_image": "shopify://shop_images/5a010feb76ff44293f9baee1c73cc452-ezgif.com-jpg-to-webp-converter.webp"
-          }
-        },
-        "collection_QHEfgG": {
-          "type": "collection",
-          "settings": {
-            "collection": "winter-crop-tops",
-            "custom_collection_image": "shopify://shop_images/CHRONSTYLE-Women-Slim-Cropped-Knitted-Sweaters-Solid-Zip-Up-Long-Sleeve-Cardigan-Spring-Fall-Stand-Collar_419394e2-c05f-4d9c-802a-32cf20dd1061.webp"
-          }
-        },
-        "collection_4KmmP3": {
-          "type": "collection",
-          "settings": {
-            "collection": "kids-jackets",
-            "custom_collection_image": "shopify://shop_images/d49dee5f5c237ae544d60d02166bcec7-ezgif.com-jpg-to-webp-converter.webp"
-          }
-        }
-      },
-      "block_order": [
-        "collection_AHbtbc",
-        "collection_iNnFMx",
-        "collection_8MVnRz",
-        "collection_VAHdU3",
-        "collection_QHEfgG",
-        "collection_4KmmP3"
-      ],
-      "name": "t:sections.featured-collections.name",
-      "settings": {
-        "heading": "Featured colllections",
-        "heading_style": "section-heading",
-        "heading_tag": "h2",
-        "center_text": false,
-        "grid_type": "slider",
-        "desktop_columns": "3",
-        "mobile_columns": "1",
-        "on_mobile_show": 0,
-        "show_more_button_label": "Show more",
-        "show_more_button_icon": "",
-        "swap_show_more_button_icon": true,
-        "show_more_button_style": "outlined",
-        "desktop_item_width": 4,
-        "alignment_fewer_items": "left",
-        "mobile_item_min_width": 250,
-        "show_arrows": true,
-        "show_scrollbar": true,
-        "show_collection_card_border": false,
-        "overlay_opacity": 50,
-        "full_width": true,
-        "grid_style": "page",
-        "disable_max_width": false,
-        "disable_grid_gaps": true,
-        "show_bottom_line": false,
-        "color_scheme": "",
-        "collection_card_color_scheme": "",
-        "section_framing": "disable",
-        "top_spacing": 0,
-        "bottom_spacing": 0
       }
     },
     "collection_tabs_mDpf3c": {
@@ -906,8 +906,8 @@
   "order": [
     "collapsible_tabs_ekEtGz",
     "slideshow_Q7Gb4k",
-    "featured_collection_with_media_BeEHyQ",
     "featured_collections_JPMnHK",
+    "featured_collection_with_media_BeEHyQ",
     "collection_tabs_mDpf3c",
     "featured_product_TQCtY8",
     "icons_with_text_RxkQMK"
