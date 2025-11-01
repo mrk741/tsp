@@ -123,6 +123,7 @@
         "loop_video_JpgyCM": {
           "type": "loop_video",
           "settings": {
+            "video_load": "shopify://files/videos/Pink 11 11 Sale Promo Discount Vintage Feminine Flower Video.mp4",
             "link": "",
             "target_blank": false,
             "icon": "",
