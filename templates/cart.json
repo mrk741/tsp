@@ -39,6 +39,7 @@
         },
         "shipping_calculator_pTK6yH": {
           "type": "shipping_calculator",
+          "disabled": true,
           "settings": {
             "shipping_heading": "Estimate shipping",
             "heading_style": "subheading-font",
