@@ -87,7 +87,7 @@
         "enable_country": false,
         "short_country": false,
         "show_localization_outline": false,
-        "show_localization_chevron": false,
+        "show_localization_chevron": true,
         "show_localization_flag": false,
         "localization_radius": "3px",
         "grid_style": "page",
