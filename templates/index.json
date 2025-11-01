@@ -549,8 +549,9 @@
       ],
       "name": "t:sections.featured-collection-with-media.name",
       "settings": {
-        "collection": "",
+        "collection": "long-cardigans",
         "media": "show",
+        "image": "shopify://shop_images/Light_Brown_Simple_Monoline_Typography_Logo_1.png",
         "focal_point": "center center",
         "enable_mute": false,
         "enable_pause": false,
