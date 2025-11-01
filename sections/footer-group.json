@@ -130,6 +130,16 @@
             "vertical_alignment": "flex-start",
             "desktop_padding": 0
           }
+        },
+        "payment_methods_rqmhrP": {
+          "type": "payment_methods",
+          "settings": {
+            "heading": "",
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
         }
       },
       "block_order": [
@@ -140,7 +150,8 @@
         "text_bPgVLX",
         "text_PWDYUL",
         "social_media_9T6mgU",
-        "block_image_FJPy8Q"
+        "block_image_FJPy8Q",
+        "payment_methods_rqmhrP"
       ],
       "settings": {
         "grid_columns": "4",
@@ -150,7 +161,7 @@
         "block_headings_style": "subheading-font",
         "show_top_line": false,
         "show_bottom_line": true,
-        "color_scheme": "background-2",
+        "color_scheme": "background-10",
         "top_spacing": 0.5,
         "bottom_spacing": 0
       }
