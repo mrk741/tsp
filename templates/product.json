@@ -241,7 +241,7 @@
         "inventory_status_UKMnJh": {
           "type": "inventory_status",
           "settings": {
-            "show_label": true,
+            "show_label": false,
             "show_transfer": false,
             "show_bar": true,
             "base_quantity": "1",
