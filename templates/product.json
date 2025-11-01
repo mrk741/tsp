@@ -605,7 +605,7 @@
         "info_card_style": "hide",
         "info_card_position": "first",
         "info_card_center_text": false,
-        "info_card_link": "",
+        "info_card_link": "shopify://collections",
         "info_card_target_blank": false,
         "info_card_subheading": "Subheading",
         "info_card_subheading_style": "subheading-font",
