@@ -260,15 +260,16 @@
             "target_blank": false
           }
         },
-        "button_fEMDPx": {
-          "type": "button",
+        "icon_yaiW98": {
+          "type": "icon",
           "settings": {
-            "button_label": "Discover",
-            "button_icon": "",
-            "swap_button_icon": false,
-            "button_link": "",
-            "target_blank": false,
-            "button_style": "solid"
+            "icon": "glyphs/signs/full-image",
+            "icon_size": 48,
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "mobile_icon_size": 48,
+            "link": "",
+            "target_blank": false
           }
         },
         "text_WMyDnB": {
@@ -297,7 +298,7 @@
         "text_h6nKn8",
         "icon_4nwtHG",
         "text_GcahFy",
-        "button_fEMDPx",
+        "icon_yaiW98",
         "text_WMyDnB",
         "icon_JP7FNW"
       ],
