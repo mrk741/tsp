@@ -106,7 +106,7 @@
             "link_style": "body-font",
             "uppercase": false,
             "bolder_font": false,
-            "highlight_menu_item": "Track Your Order",
+            "highlight_menu_item": "",
             "show_bottom_line": true,
             "top_spacing": 1,
             "mobile_top_spacing": 1
