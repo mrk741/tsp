@@ -118,7 +118,7 @@
         "block_image_FJPy8Q": {
           "type": "block_image",
           "settings": {
-            "heading": "",
+            "heading": "PAYMENT METHODS",
             "desktop_image": "shopify://shop_images/online-payment.avif",
             "desktop_media_ratio": "auto",
             "block_image_radius": "default",
