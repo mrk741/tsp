@@ -480,9 +480,9 @@
       "settings": {
         "overlap": "disable",
         "enable_sticky_content": true,
-        "sticky_offset": 120,
+        "sticky_offset": 96,
         "media_position": "left",
-        "gallery_style": "grid",
+        "gallery_style": "gallery",
         "gallery_size": 6,
         "grid_gap": 16,
         "organize_images": false,
