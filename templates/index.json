@@ -497,12 +497,139 @@
         "top_spacing": 0.8,
         "bottom_spacing": 0.8
       }
+    },
+    "featured_collection_with_media_BeEHyQ": {
+      "type": "featured-collection-with-media",
+      "blocks": {
+        "icon_N7dGhw": {
+          "type": "icon",
+          "settings": {
+            "icon": "",
+            "icon_size": 36,
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "mobile_icon_size": 36,
+            "link": "",
+            "target_blank": false
+          }
+        },
+        "heading_QWMEQD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Media heading",
+            "heading_style": "page-title",
+            "heading_tag": "h2"
+          }
+        },
+        "text_JnY3h6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
+            "text_style": "body-font"
+          }
+        },
+        "button_iMUyFp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_icon": "glyphs/signs/up-right",
+            "swap_button_icon": false,
+            "button_link": "",
+            "target_blank": false,
+            "button_style": "outlined",
+            "use_main_button": true
+          }
+        }
+      },
+      "block_order": [
+        "icon_N7dGhw",
+        "heading_QWMEQD",
+        "text_JnY3h6",
+        "button_iMUyFp"
+      ],
+      "name": "t:sections.featured-collection-with-media.name",
+      "settings": {
+        "collection": "",
+        "media": "show",
+        "focal_point": "center center",
+        "enable_mute": false,
+        "enable_pause": false,
+        "control_horizontal_position": "flex-end",
+        "swap_media_position": true,
+        "media_size": "small",
+        "media_ratio": "3/2",
+        "mobile_media_ratio": "1/1",
+        "content_width": "regular",
+        "vertical_text_alignment": "center",
+        "horizontal_text_alignment": "center",
+        "grid_type": "slider",
+        "products_per_page": 4,
+        "desktop_columns": "4",
+        "mobile_columns": "2",
+        "pagination_button_label": "Load more",
+        "pagination_button_icon": "",
+        "swap_pagination_button_icon": false,
+        "pagination_button_style": "link",
+        "use_main_button_pagination": false,
+        "products_to_show": 4,
+        "desktop_item_width": 4,
+        "alignment_fewer_items": "left",
+        "mobile_item_min_width": 150,
+        "show_arrows": true,
+        "show_scrollbar": true,
+        "hover_behavior": "slider",
+        "show_bullets": true,
+        "autoplay_speed": 3,
+        "desktop_options": "enable",
+        "mobile_options": "disable",
+        "card_content_style": "regular",
+        "quick_buy": "enable",
+        "price_position": "bottom",
+        "options_position": "bottom",
+        "show_vendor": "image",
+        "show_title": true,
+        "max_product_name_characters": 100,
+        "show_rating": true,
+        "show_short_description": true,
+        "show_pickup_availability": false,
+        "show_product_card_border": false,
+        "info_card_style": "hide",
+        "info_card_position": "first",
+        "info_card_center_text": false,
+        "info_card_link": "",
+        "info_card_target_blank": false,
+        "info_card_subheading": "Subheading",
+        "info_card_subheading_style": "subheading-font",
+        "info_card_subheading_tag": "h3",
+        "info_card_heading": "Heading",
+        "info_card_heading_style": "secondary-heading",
+        "info_card_heading_tag": "h2",
+        "info_card_text": "",
+        "info_card_text_style": "body-font",
+        "info_card_button_style": "solid",
+        "info_card_button_radius": "default",
+        "full_width": true,
+        "grid_style": "secondary",
+        "disable_max_width": false,
+        "disable_grid_gaps": false,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "product_grid_color_scheme": "",
+        "product_card_color_scheme": "",
+        "info_card_color_scheme": "",
+        "section_framing": "disable",
+        "enable_sticky_content": false,
+        "sticky_offset": 120,
+        "top_spacing": 1,
+        "bottom_spacing": 1
+      }
     }
   },
   "order": [
     "collapsible_tabs_ekEtGz",
     "slideshow_Q7Gb4k",
     "featured_product_TQCtY8",
-    "collection_tabs_mDpf3c"
+    "collection_tabs_mDpf3c",
+    "featured_collection_with_media_BeEHyQ"
   ]
 }
