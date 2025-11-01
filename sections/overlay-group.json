@@ -136,7 +136,7 @@
         "media_ratio": "1/1",
         "focal_point": "center center",
         "image_radius": "default",
-        "highlight_menu_item": "Abount",
+        "highlight_menu_item": "",
         "block_headings_style": "subheading-font",
         "pinned_block": "localization",
         "show_collection_banner": false,
