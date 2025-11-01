@@ -161,6 +161,7 @@
         },
         "vendor_DAXDbj": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
             "show_vendor": "text",
             "vendor_image_height": 28,
@@ -200,8 +201,8 @@
           "type": "linked_products",
           "settings": {
             "heading": "",
-            "uppercase": false,
-            "bolder_font": false,
+            "uppercase": true,
+            "bolder_font": true,
             "heading_style": "subheading-font",
             "top_spacing": 1,
             "mobile_top_spacing": 1
