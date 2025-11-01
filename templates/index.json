@@ -324,6 +324,7 @@
         },
         "heading_QWMEQD": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Media heading",
             "heading_style": "page-title",
