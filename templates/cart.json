@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-cart": {
@@ -6,8 +15,10 @@
         "price_gXyEhW": {
           "type": "price",
           "settings": {
+            "show_before_discounts": true,
             "show_saved": true,
-            "heading_style": "subheading-font"
+            "heading_style": "subheading-font",
+            "cart_total_style": "secondary-heading"
           }
         },
         "checkout_button_pxY9Ak": {
@@ -45,8 +56,8 @@
         "heading": "",
         "hide_heading": false,
         "center_text": true,
-        "show_order_weight": true,
-        "show_taxes": true,
+        "show_order_weight": false,
+        "show_taxes": false,
         "show_accelerated_buttons": true,
         "show_continue_shopping": true,
         "shopping_link": "",
@@ -55,7 +66,7 @@
         "grid_style": "alternative",
         "disable_max_width": true,
         "show_bottom_line": false,
-        "color_scheme": "background-3",
+        "color_scheme": "background-1",
         "summary_block_color_scheme": "background-1",
         "top_spacing": 1,
         "bottom_spacing": 1

@@ -159,7 +159,7 @@
     "low_inventory": 88,
     "free_shipping_cart_page": true,
     "free_shipping_cart_drawer": true,
-    "free_shipping_amount": 100,
+    "free_shipping_amount": 3000,
     "drawer_color_scheme": "background-1",
     "popup_color_scheme": "",
     "overlay_scheme_color": "bg",
