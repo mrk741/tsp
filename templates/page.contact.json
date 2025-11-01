@@ -74,9 +74,8 @@
         "heading_XnWPj3",
         "text_grkbdp"
       ],
-      "disabled": true,
       "settings": {
-        "swap_position": true,
+        "swap_position": false,
         "content_width": "regular",
         "heading": "Get in touch",
         "heading_style": "section-heading",
