@@ -130,7 +130,7 @@
             "context_media_ratio": "auto",
             "context_image_radius": "default",
             "context_image_link": "",
-            "context_target_blank": false,
+            "context_target_blank": true,
             "show_bottom_line": true,
             "top_spacing": 1,
             "mobile_top_spacing": 1
