@@ -270,8 +270,9 @@
         },
         "payment_methods_9xe86R": {
           "type": "payment_methods",
+          "disabled": true,
           "settings": {
-            "black_and_white": false,
+            "black_and_white": true,
             "icon_width": 38,
             "top_spacing": 1,
             "mobile_top_spacing": 1
@@ -279,6 +280,7 @@
         },
         "second_container_igwRTU": {
           "type": "second_container",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_style": "subheading-font",
@@ -290,6 +292,7 @@
         },
         "text_zb7gHP": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Tell a story, describe your brand or share announcements.</p>",
             "richtext_heading_style": "section-heading",
@@ -301,6 +304,7 @@
         },
         "tabs_qqtH7A": {
           "type": "tabs",
+          "disabled": true,
           "settings": {
             "text_uppercase": false,
             "text_bolder_font": false,
@@ -325,6 +329,7 @@
         },
         "ask_question_dfnVzg": {
           "type": "ask_question",
+          "disabled": true,
           "settings": {
             "popup_style": "popover",
             "popup_width": "wide",
