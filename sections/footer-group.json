@@ -131,16 +131,6 @@
             "vertical_alignment": "flex-start",
             "desktop_padding": 0
           }
-        },
-        "payment_methods_rqmhrP": {
-          "type": "payment_methods",
-          "settings": {
-            "heading": "",
-            "center_text": false,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "desktop_padding": 0
-          }
         }
       },
       "block_order": [
@@ -151,8 +141,7 @@
         "text_bPgVLX",
         "text_PWDYUL",
         "social_media_9T6mgU",
-        "block_image_FJPy8Q",
-        "payment_methods_rqmhrP"
+        "block_image_FJPy8Q"
       ],
       "settings": {
         "grid_columns": "4",
