@@ -78,11 +78,11 @@
             "desktop_padding": 0
           }
         },
-        "text_PWDYUL": {
+        "text_bPgVLX": {
           "type": "text",
           "settings": {
-            "heading": "Helpline",
-            "text": "<p>This is where you can share your brand story and vision with your customers. You can change the text in the theme editor.</p>",
+            "heading": "",
+            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
             "text_style": "body-font",
             "desktop_width": 100,
             "center_text": false,
@@ -91,11 +91,11 @@
             "desktop_padding": 0
           }
         },
-        "text_bPgVLX": {
+        "text_PWDYUL": {
           "type": "text",
           "settings": {
-            "heading": "",
-            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
+            "heading": "Helpline",
+            "text": "<p>This is where you can share your brand story and vision with your customers. You can change the text in the theme editor.</p>",
             "text_style": "body-font",
             "desktop_width": 100,
             "center_text": false,
@@ -131,8 +131,8 @@
         "menu_njk8Qe",
         "menu_r8YiHw",
         "newsletter_4dAj7z",
-        "text_PWDYUL",
         "text_bPgVLX",
+        "text_PWDYUL",
         "social_media_9T6mgU",
         "payment_methods_q4HFxY"
       ],
