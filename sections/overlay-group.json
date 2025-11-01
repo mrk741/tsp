@@ -111,12 +111,37 @@
             "top_spacing": 1,
             "mobile_top_spacing": 1
           }
+        },
+        "account_RWrwYE": {
+          "type": "account",
+          "settings": {
+            "show_icon": false,
+            "text_style": "body-font",
+            "show_bottom_line": true,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
+        },
+        "context_image_nwDiq4": {
+          "type": "context_image",
+          "settings": {
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false,
+            "show_bottom_line": true,
+            "top_spacing": 1,
+            "mobile_top_spacing": 1
+          }
         }
       },
       "block_order": [
         "line_YDnLLK",
         "social_media_4KgzTd",
-        "secondary_menu_9LYj6b"
+        "secondary_menu_9LYj6b",
+        "account_RWrwYE",
+        "context_image_nwDiq4"
       ],
       "custom_css": [],
       "settings": {
