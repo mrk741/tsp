@@ -627,101 +627,6 @@
         "top_spacing": 1.3,
         "bottom_spacing": 1.4
       }
-    },
-    "multicolumn_8c6XLV": {
-      "type": "multicolumn",
-      "blocks": {
-        "image_FHaNc6": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "block_target_blank": false,
-            "media_ratio": "auto",
-            "heading": "Image heading",
-            "heading_style": "secondary-heading",
-            "text": "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
-            "text_style": "body-font",
-            "text_alignment": "left",
-            "button_label": "Discover",
-            "button_icon": "",
-            "swap_button_icon": false,
-            "button_link": "",
-            "target_blank": false,
-            "button_style": "outlined",
-            "color_scheme": ""
-          }
-        },
-        "loop_video_Qqik3M": {
-          "type": "loop_video",
-          "settings": {
-            "link": "",
-            "block_target_blank": false,
-            "media_ratio": "auto",
-            "heading": "Loop video heading",
-            "heading_style": "secondary-heading",
-            "text": "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
-            "text_style": "body-font",
-            "text_alignment": "left",
-            "button_label": "Discover",
-            "button_icon": "",
-            "swap_button_icon": false,
-            "button_link": "",
-            "target_blank": false,
-            "button_style": "outlined",
-            "enable_mute": false,
-            "enable_pause": false,
-            "control_horizontal_position": "flex-end",
-            "color_scheme": ""
-          }
-        },
-        "text_HBGe34": {
-          "type": "text",
-          "settings": {
-            "link": "",
-            "block_target_blank": false,
-            "heading": "Text heading",
-            "heading_style": "secondary-heading",
-            "text": "<p>Tell a story, describe your brand or share announcements.</p>",
-            "text_style": "body-font",
-            "text_alignment": "left",
-            "button_label": "Discover",
-            "button_icon": "",
-            "swap_button_icon": false,
-            "button_link": "",
-            "target_blank": false,
-            "button_style": "outlined",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_FHaNc6",
-        "loop_video_Qqik3M",
-        "text_HBGe34"
-      ],
-      "name": "t:sections.multicolumn.name",
-      "settings": {
-        "subheading": "",
-        "subheading_style": "subheading-font",
-        "subheading_tag": "h3",
-        "heading": "",
-        "heading_style": "section-heading",
-        "heading_tag": "h2",
-        "center_text": true,
-        "desktop_columns": "2",
-        "mobile_columns": "1",
-        "enable_masonry": true,
-        "media_radius": "default",
-        "full_width": false,
-        "grid_style": "page",
-        "disable_max_width": false,
-        "disable_grid_gaps": false,
-        "show_bottom_line": false,
-        "color_scheme": "",
-        "section_framing": "disable",
-        "top_spacing": 1,
-        "bottom_spacing": 1
-      }
     }
   },
   "order": [
@@ -729,7 +634,6 @@
     "slideshow_Q7Gb4k",
     "featured_product_TQCtY8",
     "collection_tabs_mDpf3c",
-    "featured_collection_with_media_BeEHyQ",
-    "multicolumn_8c6XLV"
+    "featured_collection_with_media_BeEHyQ"
   ]
 }
