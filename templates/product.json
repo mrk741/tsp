@@ -661,6 +661,7 @@
     },
     "custom_liquid_eyPPD3": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.name",
       "settings": {
         "custom_liquid": "{% render 'ask-ai-ots' %}",
