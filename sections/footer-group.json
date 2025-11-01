@@ -14,19 +14,6 @@
     "footer": {
       "type": "Footer",
       "blocks": {
-        "text_bPgVLX": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
-            "text_style": "body-font",
-            "desktop_width": 100,
-            "center_text": false,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "desktop_padding": 0
-          }
-        },
         "context_image_qexqak": {
           "type": "context_image",
           "settings": {
@@ -104,6 +91,19 @@
             "desktop_padding": 0
           }
         },
+        "text_bPgVLX": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
+            "text_style": "body-font",
+            "desktop_width": 100,
+            "center_text": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
         "social_media_9T6mgU": {
           "type": "social_media",
           "settings": {
@@ -127,12 +127,12 @@
         }
       },
       "block_order": [
-        "text_bPgVLX",
         "context_image_qexqak",
         "menu_njk8Qe",
         "menu_r8YiHw",
         "newsletter_4dAj7z",
         "text_PWDYUL",
+        "text_bPgVLX",
         "social_media_9T6mgU",
         "payment_methods_q4HFxY"
       ],
