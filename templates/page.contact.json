@@ -22,7 +22,7 @@
         "grid_style": "page",
         "disable_max_width": false,
         "show_bottom_line": false,
-        "color_scheme": "background-4",
+        "color_scheme": "background-1",
         "section_framing": "disable",
         "top_spacing": 0.5,
         "bottom_spacing": 0
@@ -74,8 +74,9 @@
         "heading_XnWPj3",
         "text_grkbdp"
       ],
+      "disabled": true,
       "settings": {
-        "swap_position": false,
+        "swap_position": true,
         "content_width": "regular",
         "heading": "Get in touch",
         "heading_style": "section-heading",
