@@ -119,8 +119,8 @@
       "custom_css": [],
       "settings": {
         "header_layout": "logo_left_wide_search",
-        "sticky_header": "on_scroll",
-        "menu": "",
+        "sticky_header": "always",
+        "menu": "main-menu",
         "parent_menu": true,
         "dropdown_icon": "chevron",
         "dropdown_event_type": "hover",
