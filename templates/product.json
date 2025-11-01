@@ -394,7 +394,7 @@
             "page_content_in_popup_2": true,
             "popup_style_2": "popover",
             "popup_width_2": "wide",
-            "icon_3": "glyphs/signs/restart",
+            "icon_3": "glyphs/interface/restart",
             "color_3": "#5067a1",
             "mobile_color_3": "#000000",
             "title_3": "Easy Returns",
