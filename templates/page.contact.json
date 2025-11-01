@@ -1,4 +1,13 @@
- {
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
   "sections": {
     "main-page": {
       "type": "main-page",
@@ -22,6 +31,19 @@
     "contact_form_Rkmg7E": {
       "type": "contact-form",
       "blocks": {
+        "contacts_QnraTd": {
+          "type": "contacts",
+          "settings": {
+            "subheading": "Contact",
+            "subheading_style": "subheading-font",
+            "contacts_1": "hello@shopifystore.com",
+            "contacts_1_type": "email",
+            "contacts_2": "123-456-7890",
+            "contacts_2_type": "phone_number",
+            "description": "Mon–Fri, 10AM–9PM",
+            "text_style": "body-font"
+          }
+        },
         "subheading_NHf67w": {
           "type": "subheading",
           "settings": {
@@ -44,26 +66,13 @@
             "text": "<p>Share your address and payment methods. Describe how to find your local store or how long it might take you to respond to an email. Attach a photo of the entrance.</p>",
             "text_style": "body-font"
           }
-        },
-        "contacts_QnraTd": {
-          "type": "contacts",
-          "settings": {
-            "subheading": "Contact",
-            "subheading_style": "subheading-font",
-            "contacts_1": "hello@shopifystore.com",
-            "contacts_1_type": "email",
-            "contacts_2": "123-456-7890",
-            "contacts_2_type": "phone_number",
-            "description": "Mon–Fri, 10AM–9PM",
-            "text_style": "body-font"
-          }
         }
       },
       "block_order": [
+        "contacts_QnraTd",
         "subheading_NHf67w",
         "heading_XnWPj3",
-        "text_grkbdp",
-        "contacts_QnraTd"
+        "text_grkbdp"
       ],
       "settings": {
         "swap_position": false,
