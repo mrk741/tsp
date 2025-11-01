@@ -123,7 +123,7 @@
     "product_price_style": "subheading-font",
     "bolder_product_price": false,
     "use_accent_color_for_price": false,
-    "compare_at_price_color": "text-background",
+    "compare_at_price_color": "sale",
     "center_small_product_card_content": false,
     "small_product_titles_style": "caption-font",
     "small_product_titles_uppercase": true,
