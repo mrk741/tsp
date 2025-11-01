@@ -643,7 +643,7 @@
       "type": "recently-viewed-products",
       "name": "t:sections.recently-viewed-products.name",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Recently Viewed",
         "heading_style": "section-heading",
         "heading_tag": "h2",
         "center_text": true,
