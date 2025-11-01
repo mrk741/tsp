@@ -209,7 +209,7 @@
           "type": "linked_products",
           "disabled": true,
           "settings": {
-            "heading": "",
+            "heading": "Colors",
             "uppercase": true,
             "bolder_font": true,
             "heading_style": "subheading-font",
