@@ -93,6 +93,7 @@
         },
         "text_PWDYUL": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "Helpline",
             "text": "<p>This is where you can share your brand story and vision with your customers. You can change the text in the theme editor.</p>",
