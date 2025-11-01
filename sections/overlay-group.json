@@ -67,7 +67,7 @@
         "icon_width": 24,
         "offer_heading": "Limited Time Offer",
         "offer_heading_style": "secondary-heading",
-        "offer_text": "<p>Today only! Use code '<strong>OTS10'</strong> at checkout to save extra <strong>10%</strong> on your entire purchase. Don’t miss out!</p>",
+        "offer_text": "<p>Today only! Use code '<strong>TSP10'</strong> at checkout to save extra <strong>10%</strong> on your entire purchase. Don’t miss out!</p>",
         "offer_text_style": "body-font",
         "background_color": "#fffb00",
         "text_color": "rgba(0,0,0,0)"
