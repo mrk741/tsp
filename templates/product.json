@@ -436,6 +436,7 @@
         },
         "complementary_products_MdArDW": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "heading_style": "subheading-font",
@@ -456,6 +457,7 @@
         },
         "related_collections_JB3aVW": {
           "type": "related_collections",
+          "disabled": true,
           "settings": {
             "heading": "Related collections",
             "heading_style": "subheading-font",
@@ -475,7 +477,7 @@
         "share_hwwaKa": {
           "type": "share",
           "settings": {
-            "show_only_icons": false,
+            "show_only_icons": true,
             "text_style": "body-font",
             "top_spacing": 1,
             "mobile_top_spacing": 1
