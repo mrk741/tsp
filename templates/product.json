@@ -207,7 +207,6 @@
         },
         "linked_products_iqyhDV": {
           "type": "linked_products",
-          "disabled": true,
           "settings": {
             "heading": "Colors",
             "uppercase": true,
