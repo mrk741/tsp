@@ -16,10 +16,9 @@
       "blocks": {
         "text_dJgrDE": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "desktop_text": "<p>Announce something Announce something</p>",
-            "mobile_text": "<p>Announce</p>",
+            "desktop_text": "<p>Free Delivery Above 3000/-</p>",
+            "mobile_text": "<p>Free Delivery Above 3000/-</p>",
             "icon": "",
             "color": "#000000",
             "mobile_color": "#000000",
