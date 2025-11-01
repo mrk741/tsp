@@ -34,7 +34,7 @@
         "shipping_heading": "Estimate shipping",
         "shipping_heading_style": "subheading-font",
         "shipping_country": "Pakistan",
-        "enable_cart_recommendations": true,
+        "enable_cart_recommendations": false,
         "cart_recommendations_content": "both",
         "heading": "You may also like",
         "recently_viewed_heading": "Recently viewed",
