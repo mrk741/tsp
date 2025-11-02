@@ -324,8 +324,8 @@
             "icon": "handsy/car",
             "icon_size": 100,
             "color": "#fff9dd",
-            "mobile_color": "#000000",
-            "mobile_icon_size": 48,
+            "mobile_color": "#fff9dd",
+            "mobile_icon_size": 100,
             "link": "",
             "target_blank": false
           }
