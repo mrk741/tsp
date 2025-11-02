@@ -344,8 +344,8 @@
           "settings": {
             "icon": "handsy/fingerprint",
             "icon_size": 100,
-            "color": "#000000",
-            "mobile_color": "#000000",
+            "color": "#feeff5",
+            "mobile_color": "#feeff5",
             "mobile_icon_size": 100,
             "link": "",
             "target_blank": false
