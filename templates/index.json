@@ -350,13 +350,36 @@
             "link": "",
             "target_blank": false
           }
+        },
+        "text_RYmYed": {
+          "type": "text",
+          "settings": {
+            "desktop_text": "Easy Returns",
+            "mobile_text": "Easy Returns",
+            "link": "",
+            "target_blank": false
+          }
+        },
+        "icon_TV78Fn": {
+          "type": "icon",
+          "settings": {
+            "icon": "glyphs/signs/full-image",
+            "icon_size": 48,
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "mobile_icon_size": 48,
+            "link": "",
+            "target_blank": false
+          }
         }
       },
       "block_order": [
         "text_pqD7bT",
         "icon_QBrHfN",
         "text_6WiizM",
-        "icon_Tqrc9r"
+        "icon_Tqrc9r",
+        "text_RYmYed",
+        "icon_TV78Fn"
       ],
       "name": "t:sections.scrolling-promotion.name",
       "settings": {
