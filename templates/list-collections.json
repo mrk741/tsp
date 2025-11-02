@@ -1,7 +1,63 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-list-collections": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_PKKQnp": {
+          "type": "collection",
+          "settings": {
+            "collection": "women-short-cardigans-sweater",
+            "custom_collection_image": "shopify://shop_images/v-neck-fluffy-knit-cardigan-sweater-khaki-one-size-908-ezgif.com-webp-to-jpg-converter.webp"
+          }
+        },
+        "collection_a9JAY9": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_UNp9BP": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_dDj6CC": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_HWXy7i": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_pm9rCc": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_PKKQnp",
+        "collection_a9JAY9",
+        "collection_UNp9BP",
+        "collection_dDj6CC",
+        "collection_HWXy7i",
+        "collection_pm9rCc"
+      ],
       "settings": {
         "heading": "Collections",
         "heading_style": "section-heading",
