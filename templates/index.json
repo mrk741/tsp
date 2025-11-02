@@ -444,6 +444,26 @@
             "collection": "kids-jackets",
             "custom_collection_image": "shopify://shop_images/d49dee5f5c237ae544d60d02166bcec7-ezgif.com-jpg-to-webp-converter.webp"
           }
+        },
+        "information_card_TybQ9j": {
+          "type": "information_card",
+          "settings": {
+            "show_on_desktop": false,
+            "info_card_center_text": false,
+            "info_card_link": "",
+            "info_card_target_blank": false,
+            "info_card_subheading": "Subheading",
+            "info_card_subheading_style": "subheading-font",
+            "info_card_subheading_tag": "h3",
+            "info_card_heading": "All Collections.All the Time.",
+            "info_card_heading_style": "secondary-heading",
+            "info_card_heading_tag": "h2",
+            "info_card_text": "",
+            "info_card_text_style": "body-font",
+            "info_card_button_style": "solid",
+            "info_card_button_radius": "default",
+            "info_card_color_scheme": "background-1"
+          }
         }
       },
       "block_order": [
@@ -452,7 +472,8 @@
         "collection_8MVnRz",
         "collection_VAHdU3",
         "collection_QHEfgG",
-        "collection_4KmmP3"
+        "collection_4KmmP3",
+        "information_card_TybQ9j"
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
