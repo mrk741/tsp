@@ -361,19 +361,19 @@
       "settings": {
         "font_style": "section-heading",
         "line_show": "disable",
-        "line_padding": 24,
-        "gap_items": 48,
-        "mobile_gap_items": 48,
+        "line_padding": 16,
+        "gap_items": 12,
+        "mobile_gap_items": 12,
         "scroll_direction": "left",
         "speed": 1.6,
         "use_main_button": false,
-        "full_width": false,
+        "full_width": true,
         "grid_style": "page",
         "disable_max_width": false,
         "color_scheme": "",
         "section_framing": "disable",
-        "top_spacing": 1,
-        "bottom_spacing": 1
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "featured_collections_JPMnHK": {
