@@ -363,11 +363,11 @@
         "icon_TV78Fn": {
           "type": "icon",
           "settings": {
-            "icon": "glyphs/signs/full-image",
-            "icon_size": 48,
-            "color": "#000000",
-            "mobile_color": "#000000",
-            "mobile_icon_size": 48,
+            "icon": "handsy/service",
+            "icon_size": 100,
+            "color": "#f5ffdf",
+            "mobile_color": "#f5ffdf",
+            "mobile_icon_size": 100,
             "link": "",
             "target_blank": false
           }
