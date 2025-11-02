@@ -1021,6 +1021,24 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_JeD3yf": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Review: the cardigan from your collection are absolutely perfect.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-11-02_at_1.57.28_PM_7.jpg",
+            "author_name": "Sakina",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
@@ -1029,7 +1047,8 @@
         "testimonial_aj6pnx",
         "testimonial_j3PnFw",
         "testimonial_4bej8R",
-        "testimonial_ET8dxm"
+        "testimonial_ET8dxm",
+        "testimonial_JeD3yf"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
