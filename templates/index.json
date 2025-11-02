@@ -452,7 +452,7 @@
             "info_card_center_text": false,
             "info_card_link": "shopify://collections",
             "info_card_target_blank": false,
-            "info_card_subheading": "Subheading",
+            "info_card_subheading": "",
             "info_card_subheading_style": "subheading-font",
             "info_card_subheading_tag": "h3",
             "info_card_heading": "{All Collections.All the Time.}",
