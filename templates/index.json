@@ -1286,6 +1286,7 @@
         "context_image_azNFW7": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/16.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1296,6 +1297,7 @@
         "context_image_AbhN3q": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/15.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1306,6 +1308,7 @@
         "context_image_ERUJqB": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/7.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1316,6 +1319,7 @@
         "context_image_rfU3Ew": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/11.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1326,6 +1330,7 @@
         "context_image_dwzjjN": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/5.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1336,6 +1341,29 @@
         "context_image_MiWfUG": {
           "type": "context_image",
           "settings": {
+            "context_image": "shopify://shop_images/19.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_b6N6ad": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/10.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_VcT7Cw": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/13.png",
             "context_image_width": 120,
             "context_media_ratio": "auto",
             "context_image_radius": "default",
@@ -1351,7 +1379,9 @@
         "context_image_ERUJqB",
         "context_image_rfU3Ew",
         "context_image_dwzjjN",
-        "context_image_MiWfUG"
+        "context_image_MiWfUG",
+        "context_image_b6N6ad",
+        "context_image_VcT7Cw"
       ],
       "name": "t:sections.scrolling-promotion.name",
       "settings": {
