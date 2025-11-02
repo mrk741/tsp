@@ -796,106 +796,70 @@
         "bottom_spacing": 1
       }
     },
-    "icons_with_text_RxkQMK": {
-      "type": "icons-with-text",
+    "scrolling_promotion_DdJK8L": {
+      "type": "scrolling-promotion",
       "blocks": {
-        "item_3J4rnc": {
-          "type": "item",
+        "text_pqD7bT": {
+          "type": "text",
           "settings": {
-            "icon": "glyphs/signs/full-image",
-            "color": "#000000",
-            "mobile_color": "#000000",
-            "heading": "Icon heading",
-            "heading_style": "subheading-font",
-            "text": "<p>Add a short advantage or guarantee description.</p>",
-            "text_style": "body-font",
-            "page": "",
-            "rte_heading_style": "section-heading",
-            "page_content_in_popup": true,
-            "popup_style": "popover",
-            "popup_width": "wide"
+            "desktop_text": "Free Shipping",
+            "mobile_text": "Free Shipping",
+            "link": "",
+            "target_blank": false
           }
         },
-        "item_ATzRHL": {
-          "type": "item",
+        "icon_QBrHfN": {
+          "type": "icon",
           "settings": {
-            "icon": "glyphs/signs/full-image",
-            "color": "#000000",
+            "icon": "handsy/car",
+            "icon_size": 100,
+            "color": "#fff9dd",
             "mobile_color": "#000000",
-            "heading": "Icon heading",
-            "heading_style": "subheading-font",
-            "text": "<p>Add a short advantage or guarantee description.</p>",
-            "text_style": "body-font",
-            "page": "",
-            "rte_heading_style": "section-heading",
-            "page_content_in_popup": true,
-            "popup_style": "popover",
-            "popup_width": "wide"
+            "mobile_icon_size": 48,
+            "link": "",
+            "target_blank": false
           }
         },
-        "item_TPzmVd": {
-          "type": "item",
+        "text_6WiizM": {
+          "type": "text",
           "settings": {
-            "icon": "glyphs/signs/full-image",
-            "color": "#000000",
-            "mobile_color": "#000000",
-            "heading": "Icon heading",
-            "heading_style": "subheading-font",
-            "text": "<p>Add a short advantage or guarantee description.</p>",
-            "text_style": "body-font",
-            "page": "",
-            "rte_heading_style": "section-heading",
-            "page_content_in_popup": true,
-            "popup_style": "popover",
-            "popup_width": "wide"
+            "desktop_text": "Second promotion",
+            "mobile_text": "",
+            "link": "",
+            "target_blank": false
           }
         },
-        "item_qAV6Ye": {
-          "type": "item",
+        "button_k8RYjb": {
+          "type": "button",
           "settings": {
-            "icon": "glyphs/signs/full-image",
-            "color": "#000000",
-            "mobile_color": "#000000",
-            "heading": "Icon heading",
-            "heading_style": "subheading-font",
-            "text": "<p>Add a short advantage or guarantee description.</p>",
-            "text_style": "body-font",
-            "page": "",
-            "rte_heading_style": "section-heading",
-            "page_content_in_popup": true,
-            "popup_style": "popover",
-            "popup_width": "wide"
+            "button_label": "Discover",
+            "button_icon": "",
+            "swap_button_icon": false,
+            "button_link": "",
+            "target_blank": false,
+            "button_style": "solid"
           }
         }
       },
       "block_order": [
-        "item_3J4rnc",
-        "item_ATzRHL",
-        "item_TPzmVd",
-        "item_qAV6Ye"
+        "text_pqD7bT",
+        "icon_QBrHfN",
+        "text_6WiizM",
+        "button_k8RYjb"
       ],
-      "disabled": true,
-      "name": "t:sections.icons-with-text.name",
+      "name": "t:sections.scrolling-promotion.name",
       "settings": {
-        "heading": "",
-        "heading_style": "section-heading",
-        "heading_tag": "h2",
-        "grid_type": "slider",
-        "desktop_item_width": 4,
-        "alignment_fewer_items": "left",
-        "mobile_item_min_width": 250,
-        "show_arrows": true,
-        "show_scrollbar": true,
-        "desktop_columns": "3",
-        "mobile_columns": "1",
-        "center_text": true,
-        "icon_or_image_size": 48,
-        "fill_container": false,
-        "image_radius": "default",
-        "full_width": true,
+        "font_style": "section-heading",
+        "line_show": "disable",
+        "line_padding": 24,
+        "gap_items": 48,
+        "mobile_gap_items": 48,
+        "scroll_direction": "left",
+        "speed": 1.6,
+        "use_main_button": false,
+        "full_width": false,
         "grid_style": "page",
         "disable_max_width": false,
-        "show_bottom_line": false,
         "color_scheme": "",
         "section_framing": "disable",
         "top_spacing": 1,
@@ -910,6 +874,6 @@
     "featured_collection_with_media_BeEHyQ",
     "collection_tabs_mDpf3c",
     "featured_product_TQCtY8",
-    "icons_with_text_RxkQMK"
+    "scrolling_promotion_DdJK8L"
   ]
 }
