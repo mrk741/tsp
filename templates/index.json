@@ -1075,6 +1075,24 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_tftg3z": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Loved the top thank you so much.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-11-02_at_1.57.28_PM.jpg",
+            "author_name": "Shagaly",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
@@ -1086,7 +1104,8 @@
         "testimonial_ET8dxm",
         "testimonial_JeD3yf",
         "testimonial_mCNwdV",
-        "testimonial_UdKBMD"
+        "testimonial_UdKBMD",
+        "testimonial_tftg3z"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
