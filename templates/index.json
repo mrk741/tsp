@@ -1057,6 +1057,24 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_UdKBMD": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Received my parcel yesterday just loved it, will shop again.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-11-02_at_1.57.28_PM_9.jpg",
+            "author_name": "Rabia",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
@@ -1067,7 +1085,8 @@
         "testimonial_4bej8R",
         "testimonial_ET8dxm",
         "testimonial_JeD3yf",
-        "testimonial_mCNwdV"
+        "testimonial_mCNwdV",
+        "testimonial_UdKBMD"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
