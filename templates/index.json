@@ -694,7 +694,7 @@
       "name": "t:sections.featured-collection-with-media.name",
       "settings": {
         "collection": "women-knitted-tops",
-        "media": "show",
+        "media": "hide",
         "focal_point": "center center",
         "enable_mute": false,
         "enable_pause": false,
