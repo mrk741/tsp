@@ -63,7 +63,7 @@
     "full_width_page_grid": true,
     "page_column_gap": 10,
     "page_row_gap": 40,
-    "full_width_second_grid": true,
+    "full_width_second_grid": false,
     "second_grid_width": 1360,
     "second_grid_column_gap": 4,
     "second_grid_row_gap": 4,
