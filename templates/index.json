@@ -333,21 +333,22 @@
         "text_6WiizM": {
           "type": "text",
           "settings": {
-            "desktop_text": "Second promotion",
-            "mobile_text": "",
+            "desktop_text": "Secure Checkout",
+            "mobile_text": "Secure Checkout",
             "link": "",
             "target_blank": false
           }
         },
-        "button_k8RYjb": {
-          "type": "button",
+        "icon_Tqrc9r": {
+          "type": "icon",
           "settings": {
-            "button_label": "Discover",
-            "button_icon": "",
-            "swap_button_icon": false,
-            "button_link": "",
-            "target_blank": false,
-            "button_style": "solid"
+            "icon": "handsy/fingerprint",
+            "icon_size": 100,
+            "color": "#000000",
+            "mobile_color": "#000000",
+            "mobile_icon_size": 100,
+            "link": "",
+            "target_blank": false
           }
         }
       },
@@ -355,7 +356,7 @@
         "text_pqD7bT",
         "icon_QBrHfN",
         "text_6WiizM",
-        "button_k8RYjb"
+        "icon_Tqrc9r"
       ],
       "name": "t:sections.scrolling-promotion.name",
       "settings": {
