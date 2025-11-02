@@ -456,7 +456,7 @@
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
-        "heading": "Featured colllections",
+        "heading": "{Featured Collections}",
         "heading_style": "section-heading",
         "heading_tag": "h2",
         "center_text": false,
