@@ -504,7 +504,7 @@
         "color_scheme": "",
         "collection_card_color_scheme": "",
         "section_framing": "disable",
-        "top_spacing": 0.5,
+        "top_spacing": 0,
         "bottom_spacing": 0
       }
     },
