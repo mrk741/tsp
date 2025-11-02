@@ -1370,6 +1370,61 @@
             "context_image_link": "",
             "context_target_blank": false
           }
+        },
+        "context_image_dihUgt": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/8.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_GVanTr": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/2.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_HbFaCE": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/9.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_HYh3aU": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/12.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
+        },
+        "context_image_twBXkc": {
+          "type": "context_image",
+          "settings": {
+            "context_image": "shopify://shop_images/14.png",
+            "context_image_width": 120,
+            "context_media_ratio": "auto",
+            "context_image_radius": "default",
+            "context_image_link": "",
+            "context_target_blank": false
+          }
         }
       },
       "block_order": [
@@ -1381,7 +1436,12 @@
         "context_image_dwzjjN",
         "context_image_MiWfUG",
         "context_image_b6N6ad",
-        "context_image_VcT7Cw"
+        "context_image_VcT7Cw",
+        "context_image_dihUgt",
+        "context_image_GVanTr",
+        "context_image_HbFaCE",
+        "context_image_HYh3aU",
+        "context_image_twBXkc"
       ],
       "name": "t:sections.scrolling-promotion.name",
       "settings": {
