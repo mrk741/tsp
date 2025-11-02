@@ -1039,6 +1039,24 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_mCNwdV": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "The quality is great, definitely more than what I expectedWill surely shop again.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-11-02_at_1.57.28_PM_8.jpg",
+            "author_name": "Anoosha",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
@@ -1048,7 +1066,8 @@
         "testimonial_j3PnFw",
         "testimonial_4bej8R",
         "testimonial_ET8dxm",
-        "testimonial_JeD3yf"
+        "testimonial_JeD3yf",
+        "testimonial_mCNwdV"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
