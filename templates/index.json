@@ -369,7 +369,7 @@
         "use_main_button": false,
         "full_width": true,
         "grid_style": "page",
-        "disable_max_width": false,
+        "disable_max_width": true,
         "color_scheme": "",
         "section_framing": "disable",
         "top_spacing": 0,
