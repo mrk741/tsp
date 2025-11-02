@@ -450,7 +450,7 @@
           "settings": {
             "show_on_desktop": false,
             "info_card_center_text": false,
-            "info_card_link": "",
+            "info_card_link": "shopify://collections",
             "info_card_target_blank": false,
             "info_card_subheading": "Subheading",
             "info_card_subheading_style": "subheading-font",
@@ -462,7 +462,7 @@
             "info_card_text_style": "body-font",
             "info_card_button_style": "solid",
             "info_card_button_radius": "default",
-            "info_card_color_scheme": "background-1"
+            "info_card_color_scheme": "background-2"
           }
         }
       },
