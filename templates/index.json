@@ -1458,8 +1458,8 @@
         "disable_max_width": false,
         "color_scheme": "",
         "section_framing": "disable",
-        "top_spacing": 1,
-        "bottom_spacing": 1
+        "top_spacing": 0,
+        "bottom_spacing": 0.1
       }
     }
   },
