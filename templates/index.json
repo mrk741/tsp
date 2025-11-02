@@ -495,7 +495,7 @@
         "show_arrows": true,
         "show_scrollbar": true,
         "show_collection_card_border": false,
-        "overlay_opacity": 50,
+        "overlay_opacity": 60,
         "full_width": true,
         "grid_style": "page",
         "disable_max_width": false,
