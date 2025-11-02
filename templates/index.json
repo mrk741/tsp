@@ -985,13 +985,32 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_4bej8R": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "I received my parcelIt's amazing!Will shop again IA",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-11-02_at_1.57.28_PM_5.jpg",
+            "author_name": "Kainat",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
         "testimonial_pPzyfX",
         "testimonial_3WpmMC",
         "testimonial_aj6pnx",
-        "testimonial_j3PnFw"
+        "testimonial_j3PnFw",
+        "testimonial_4bej8R"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
