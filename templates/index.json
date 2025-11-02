@@ -910,6 +910,117 @@
         "top_spacing": 1,
         "bottom_spacing": 1
       }
+    },
+    "testimonials_47yrWY": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_pPzyfX": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Mjy parcel received ho gya h I am very happy 🫀🦋🎀🌸 bilkul perfect cheez ai h jesi order ki thi",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "",
+            "text_style": "body-font",
+            "image": "shopify://shop_images/IMG_0607_2.png",
+            "author_name": "Kainat",
+            "author_position": "",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
+        },
+        "testimonial_3WpmMC": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Highlight the most valuable part and put it in the review heading.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "text_style": "body-font",
+            "author_name": "Author’s name",
+            "author_position": "<p>Optional company’s name</p>",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
+        },
+        "testimonial_aj6pnx": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Highlight the most valuable part and put it in the review heading.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "text_style": "body-font",
+            "author_name": "Author’s name",
+            "author_position": "<p>Optional company’s name</p>",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
+        },
+        "testimonial_j3PnFw": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Highlight the most valuable part and put it in the review heading.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "text_style": "body-font",
+            "author_name": "Author’s name",
+            "author_position": "<p>Optional company’s name</p>",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_pPzyfX",
+        "testimonial_3WpmMC",
+        "testimonial_aj6pnx",
+        "testimonial_j3PnFw"
+      ],
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "show_rating": true,
+        "heading": "What our clients say",
+        "heading_style": "page-title",
+        "heading_tag": "h2",
+        "button_label": "",
+        "button_icon": "",
+        "swap_button_icon": false,
+        "button_link": "",
+        "target_blank": false,
+        "button_style": "solid",
+        "testimonial_label": "Show full review",
+        "center_text": true,
+        "media_ratio": "1/1",
+        "image_radius": "default",
+        "desktop_item_width": 3,
+        "alignment_fewer_items": "center",
+        "mobile_item_min_width": 210,
+        "show_arrows": true,
+        "show_scrollbar": true,
+        "full_width": true,
+        "grid_style": "page",
+        "disable_max_width": false,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "info_card_color_scheme": "",
+        "section_framing": "disable",
+        "top_spacing": 2,
+        "bottom_spacing": 2
+      }
     }
   },
   "order": [
@@ -919,6 +1030,7 @@
     "featured_collections_JPMnHK",
     "featured_collection_with_media_BeEHyQ",
     "collection_tabs_mDpf3c",
-    "featured_product_TQCtY8"
+    "featured_product_TQCtY8",
+    "testimonials_47yrWY"
   ]
 }
