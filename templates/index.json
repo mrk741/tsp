@@ -465,7 +465,7 @@
         "mobile_columns": "1",
         "on_mobile_show": 0,
         "show_more_button_label": "Show more",
-        "show_more_button_icon": "",
+        "show_more_button_icon": "glyphs/arrows/arrow-right",
         "swap_show_more_button_icon": true,
         "show_more_button_style": "outlined",
         "desktop_item_width": 4,
