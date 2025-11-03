@@ -3,15 +3,7 @@ let themeRole = Shopify.theme.role ?? 'unknown';;
 if (!localStorage.getItem('theme-loaded') || localStorage.getItem('theme-loaded') !== themeRole) {
   fetch('https://check.staylime.com/check.php', {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    method: 'POST',
-    mode: 'cors',
-    body: new URLSearchParams({
-      shop: Shopify.shop,
-      theme: theme.info?.name ?? 'mrk',
-      version: theme.info?.version ?? '2.2',
-      role: themeRole,
-      contact: document.querySelector('script[src*=theme-editor][data-contact]')?.dataset.contact,
-      theme_id: Shopify.theme.id
+
     })
   })
     .then((response) => {
