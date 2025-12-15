@@ -1095,10 +1095,10 @@
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
-        "heading": "",
+        "heading": "COLLECTIONS",
         "heading_style": "section-heading",
         "heading_tag": "h2",
-        "center_text": false,
+        "center_text": true,
         "grid_type": "grid",
         "desktop_columns": "3",
         "mobile_columns": "2",
