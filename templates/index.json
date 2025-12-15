@@ -1045,6 +1045,87 @@
         "bottom_spacing": 1
       }
     },
+    "featured_collections_nE7pxw": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_PJ3j6n": {
+          "type": "collection",
+          "settings": {
+            "collection": "girls-jackets-kids"
+          }
+        },
+        "collection_6qJzAD": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_ttF6fp": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_7JLeWM": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_kPyACf": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_aXYdxy": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_PJ3j6n",
+        "collection_6qJzAD",
+        "collection_ttF6fp",
+        "collection_7JLeWM",
+        "collection_kPyACf",
+        "collection_aXYdxy"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
+        "heading": "Featured colllections",
+        "heading_style": "section-heading",
+        "heading_tag": "h2",
+        "center_text": false,
+        "grid_type": "grid",
+        "desktop_columns": "3",
+        "mobile_columns": "2",
+        "on_mobile_show": 0,
+        "show_more_button_label": "Show more",
+        "show_more_button_icon": "",
+        "swap_show_more_button_icon": false,
+        "show_more_button_style": "outlined",
+        "desktop_item_width": 4,
+        "alignment_fewer_items": "left",
+        "mobile_item_min_width": 250,
+        "show_arrows": true,
+        "show_scrollbar": true,
+        "show_collection_card_border": false,
+        "overlay_opacity": 50,
+        "full_width": false,
+        "grid_style": "page",
+        "disable_max_width": false,
+        "disable_grid_gaps": false,
+        "show_bottom_line": false,
+        "color_scheme": "",
+        "collection_card_color_scheme": "",
+        "section_framing": "disable",
+        "top_spacing": 1,
+        "bottom_spacing": 1
+      }
+    },
     "testimonials_47yrWY": {
       "type": "testimonials",
       "blocks": {
@@ -1476,6 +1557,7 @@
     "featured_collection_with_media_nDxXi8",
     "collection_tabs_mDpf3c",
     "featured_product_TQCtY8",
+    "featured_collections_nE7pxw",
     "testimonials_47yrWY",
     "scrolling_promotion_36qCtc"
   ]
