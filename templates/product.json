@@ -790,6 +790,7 @@
     },
     "product_recommendations_fRnKJJ": {
       "type": "product-recommendations",
+      "disabled": true,
       "name": "t:sections.product-recommendations.name",
       "settings": {
         "heading": "You may also like",
