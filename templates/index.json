@@ -1328,6 +1328,7 @@
         "testimonial_UdKBMD",
         "testimonial_tftg3z"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials.name",
       "settings": {
         "show_rating": true,
