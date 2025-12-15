@@ -45,8 +45,9 @@
       "blocks": {
         "image_AfW7h3": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "desktop_image": "shopify://shop_images/Bless_Friday_Sale.png",
+            "desktop_image": "shopify://shop_images/YEAR_END.png",
             "link": "",
             "target_blank": false,
             "icon": "",
@@ -201,6 +202,7 @@
         },
         "image_fAEk8H": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner_66764cf6-5434-470d-b8b6-958312c3322c.png",
             "mobile_image": "shopify://shop_images/Black_White_Minimalist_Thrift_Shop_Sale_Discount_Promotion_Outdoor_Banner_66764cf6-5434-470d-b8b6-958312c3322c.png",
