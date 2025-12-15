@@ -16,6 +16,7 @@
       "blocks": {
         "context_image_qexqak": {
           "type": "context_image",
+          "disabled": true,
           "settings": {
             "context_image": "shopify://shop_images/THRIFT_SHOP.png",
             "context_image_width": 232,
@@ -23,6 +24,19 @@
             "context_image_radius": "default",
             "context_image_link": "https://www.thriftshop.pk",
             "context_target_blank": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "desktop_padding": 0
+          }
+        },
+        "text_bPgVLX": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
+            "text_style": "body-font",
+            "desktop_width": 100,
+            "center_text": false,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "desktop_padding": 0
@@ -78,19 +92,6 @@
             "desktop_padding": 0
           }
         },
-        "text_bPgVLX": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "text": "<p><strong>Thrift Shop Pakistan</strong>is the country’s leading online thrift store, offering ladies’ branded articles imported from the UK in like-new condition. Get the latest UK fashion trends at unbeatable prices with guaranteed quality.</p>",
-            "text_style": "body-font",
-            "desktop_width": 100,
-            "center_text": false,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "desktop_padding": 0
-          }
-        },
         "text_PWDYUL": {
           "type": "text",
           "disabled": true,
@@ -135,10 +136,10 @@
       },
       "block_order": [
         "context_image_qexqak",
+        "text_bPgVLX",
         "menu_njk8Qe",
         "menu_r8YiHw",
         "newsletter_4dAj7z",
-        "text_bPgVLX",
         "text_PWDYUL",
         "social_media_9T6mgU",
         "block_image_FJPy8Q"
