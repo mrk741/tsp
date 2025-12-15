@@ -786,13 +786,31 @@
             "popup_style": "popover",
             "popup_width": "wide"
           }
+        },
+        "testimonial_DhEji3": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "heading": "Highlight the most valuable part and put it in the review heading.",
+            "heading_style": "section-heading",
+            "heading_tag": "h2",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "text_style": "body-font",
+            "author_name": "Author’s name",
+            "author_position": "<p>Optional company’s name</p>",
+            "page": "",
+            "rte_heading_style": "section-heading",
+            "popup_style": "popover",
+            "popup_width": "wide"
+          }
         }
       },
       "block_order": [
         "testimonial_BXPbtc",
         "testimonial_6MCK3T",
         "testimonial_tfcV3e",
-        "testimonial_4KmNd7"
+        "testimonial_4KmNd7",
+        "testimonial_DhEji3"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
