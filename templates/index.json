@@ -476,6 +476,7 @@
         "collection_4KmmP3",
         "information_card_TybQ9j"
       ],
+      "disabled": true,
       "name": "t:sections.featured-collections.name",
       "settings": {
         "heading": "{Featured Collections}",
@@ -562,6 +563,7 @@
         "text_JnY3h6",
         "button_iMUyFp"
       ],
+      "disabled": true,
       "name": "t:sections.featured-collection-with-media.name",
       "settings": {
         "collection": "long-cardigans",
@@ -692,6 +694,7 @@
         "text_kzh8cK",
         "button_gNUr7F"
       ],
+      "disabled": true,
       "name": "t:sections.featured-collection-with-media.name",
       "settings": {
         "collection": "women-knitted-tops",
