@@ -146,7 +146,7 @@
       "settings": {
         "grid_columns": "4",
         "two_columns_mobile": true,
-        "grid_style": "page",
+        "grid_style": "secondary",
         "disable_max_width": true,
         "block_headings_style": "subheading-font",
         "show_top_line": false,
