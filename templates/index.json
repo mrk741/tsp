@@ -1048,11 +1048,11 @@
     "featured_collections_nE7pxw": {
       "type": "featured-collections",
       "blocks": {
-        "collection_PJ3j6n": {
+        "collection_kPyACf": {
           "type": "collection",
           "settings": {
-            "collection": "kids-jackets",
-            "custom_collection_image": "shopify://shop_images/Kids_www.hriftshop.pk_Collection.webp"
+            "collection": "women-short-cardigans-sweater",
+            "custom_collection_image": "shopify://shop_images/Short_Cardigans_www.thriftshop.pk_Collection.webp"
           }
         },
         "collection_6qJzAD": {
@@ -1076,28 +1076,28 @@
             "custom_collection_image": "shopify://shop_images/Long_Cardigans_www.thriftshop.pk_Collection.webp"
           }
         },
-        "collection_kPyACf": {
-          "type": "collection",
-          "settings": {
-            "collection": "women-short-cardigans-sweater",
-            "custom_collection_image": "shopify://shop_images/Short_Cardigans_www.thriftshop.pk_Collection.webp"
-          }
-        },
         "collection_aXYdxy": {
           "type": "collection",
           "settings": {
             "collection": "winter-crop-tops",
             "custom_collection_image": "shopify://shop_images/Crop_Top_www.thriftshop.pk_Collection.webp"
           }
+        },
+        "collection_PJ3j6n": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-jackets",
+            "custom_collection_image": "shopify://shop_images/Kids_www.hriftshop.pk_Collection.webp"
+          }
         }
       },
       "block_order": [
-        "collection_PJ3j6n",
+        "collection_kPyACf",
         "collection_6qJzAD",
         "collection_ttF6fp",
         "collection_7JLeWM",
-        "collection_kPyACf",
-        "collection_aXYdxy"
+        "collection_aXYdxy",
+        "collection_PJ3j6n"
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
