@@ -47,6 +47,7 @@
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/YEAR_END_1.png",
+            "mobile_image": "shopify://shop_images/YEAR_END_1.png",
             "link": "",
             "target_blank": false,
             "icon": "",
