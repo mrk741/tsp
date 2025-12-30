@@ -128,7 +128,7 @@
         "link_style": "caption-font",
         "uppercase": true,
         "bolder_font": true,
-        "highlight_menu_item": "YEAR END SALE",
+        "highlight_menu_item": "NEW YEAR SALE",
         "bottom_menu": "main-menu",
         "bottom_dropdown_icon": "chevron",
         "bottom_dropdown_event_type": "hover",
