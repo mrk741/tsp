@@ -17,7 +17,7 @@
         "show_order_weight": false,
         "show_taxes": false,
         "show_before_discounts": true,
-        "show_saved": false,
+        "show_saved": true,
         "show_cart_button": true,
         "show_checkout_button": true,
         "show_price_in_button": true,
@@ -66,11 +66,11 @@
         "mobile_color": "#000000",
         "icon_width": 24,
         "offer_heading": "Limited Time Offer",
-        "offer_heading_style": "secondary-heading",
+        "offer_heading_style": "section-heading",
         "offer_text": "<p>Today only! Use code '<strong>TSP10'</strong> at checkout to save extra <strong>10%</strong> on your entire purchase. Don’t miss out!</p>",
         "offer_text_style": "body-font",
-        "background_color": "#fffb00",
-        "text_color": "rgba(0,0,0,0)"
+        "background_color": "#dd2c2c",
+        "text_color": "#ffffff"
       }
     },
     "menu-drawer": {
