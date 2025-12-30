@@ -18,19 +18,19 @@
           "type": "countdown_timer",
           "settings": {
             "countdown_enable": true,
-            "countdown_end_date": "2025-12-30",
+            "countdown_end_date": "2026-1-5",
             "countdown_end_time": "",
             "countdown_expiration_action": "show_zeros",
             "countdown_enable_animation": true,
             "countdown_make_timer_font_bolder": true,
-            "countdown_text_color": "#FFFFFF",
+            "countdown_text_color": "#ffffff",
             "countdown_show_labels": true,
             "countdown_make_labels_font_bolder": true,
-            "countdown_labels_color": "#FFFFFF",
+            "countdown_labels_color": "#ffffff",
             "desktop_text": "<p><strong>Sale Ends In</strong></p>",
             "mobile_text": "<p><strong>Sale Ends In</strong></p>",
             "icon": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "color_scheme": "background-6"
           }
         },
