@@ -16,6 +16,7 @@
       "blocks": {
         "countdown_timer_yBiixe": {
           "type": "countdown_timer",
+          "disabled": true,
           "settings": {
             "countdown_enable": true,
             "countdown_end_date": "2026-1-5",
